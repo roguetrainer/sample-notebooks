@@ -1,0 +1,1423 @@
+2017-08-29 20:24:18 - // include directory, this will be replaced by the kernel
+2017-08-29 20:24:18 - #I "/home/nbcommon/IfSharp/bin"
+2017-08-29 20:24:18 - // load base dlls
+2017-08-29 20:24:18 - #r "IfSharp.Kernel.dll"
+2017-08-29 20:24:18 - #r "NetMQ.dll"
+2017-08-29 20:24:18 - // open the global functions and methods
+2017-08-29 20:24:18 - open IfSharp.Kernel
+2017-08-29 20:24:18 - open IfSharp.Kernel.Globals
+2017-08-29 20:24:21 - F# Interactive for F# 4.1
+2017-08-29 20:24:21 - Freely distributed under the Apache 2.0 Open Source License
+2017-08-29 20:24:21 - For help type #help;;
+2017-08-29 20:24:21 - > val it : ResizeArray<System.Type * (obj -> seq<string * string> * string)> =
+2017-08-29 20:24:21 -   seq []
+2017-08-29 20:24:21 - --> Added '/home/nbcommon/IfSharp/bin' to library include path
+2017-08-29 20:24:21 - --> Referenced '/home/nbcommon/IfSharp/bin/IfSharp.Kernel.dll' (file may be locked by F# Interactive process)
+2017-08-29 20:24:21 - --> Referenced '/home/nbcommon/IfSharp/bin/NetMQ.dll' (file may be locked by F# Interactive process)
+2017-08-29 20:24:21 - Unknown content type on shell. msg_type is `comm_info_request`
+2018-06-12 17:48:43 - // include directory, this will be replaced by the kernel
+2018-06-12 17:48:43 - #I "/home/nbuser/IfSharp/bin"
+2018-06-12 17:48:43 - // load base dlls
+2018-06-12 17:48:43 - #r "IfSharp.Kernel.dll"
+2018-06-12 17:48:43 - #r "NetMQ.dll"
+2018-06-12 17:48:43 - // open the global functions and methods
+2018-06-12 17:48:43 - open IfSharp.Kernel
+2018-06-12 17:48:43 - open IfSharp.Kernel.Globals
+2018-06-12 17:49:35 - F# Interactive for F# 4.1
+2018-06-12 17:49:35 - Freely distributed under the Apache 2.0 Open Source License
+2018-06-12 17:49:35 - For help type #help;;
+2018-06-12 17:49:35 - > val it : ResizeArray<System.Type * (obj -> seq<string * string> * string)> =
+2018-06-12 17:49:35 -   seq []
+2018-06-12 17:49:35 - --> Added '/home/nbuser/IfSharp/bin' to library include path
+2018-06-12 17:49:35 - --> Referenced '/home/nbuser/IfSharp/bin/IfSharp.Kernel.dll' (file may be locked by F# Interactive process)
+2018-06-12 17:49:35 - --> Referenced '/home/nbuser/IfSharp/bin/NetMQ.dll' (file may be locked by F# Interactive process)
+2018-06-12 17:49:36 - Unknown content type on shell. msg_type is `comm_info_request`
+2018-06-12 18:14:56 - (12/4 + 5 + 7) * 4 - 18
+2018-06-12 18:16:58 - #load "Paket.fsx"
+2018-06-12 18:17:12 - Paket.Package
+2018-06-12 18:17:12 -   [ "MathNet.Numerics"
+2018-06-12 18:17:12 -     "MathNet.Numerics.FSharp"
+2018-06-12 18:17:12 -   ]
+2018-06-12 18:17:43 - #load "Paket.Generated.Refs.fsx"
+2018-06-12 18:17:47 - open MathNet.Numerics.LinearAlgebra
+2018-06-12 18:17:47 - let m = matrix [[ 1.0; 2.0 ]
+2018-06-12 18:17:47 -                 [ 3.0; 4.0 ]]
+2018-06-12 18:17:47 - m.Inverse() 
+2018-06-12 18:17:48 - The value or constructor 'matrix' is not defined. Maybe you want one of the following:
+2018-06-12 18:17:48 -    Matrix
+2018-06-12 18:17:48 -    MatrixBuilder
+2018-06-12 18:17:48 -    MatrixExtensions
+2018-06-12 18:17:48 - Lookup on object of indeterminate type based on information prior to this program point. A type annotation may be needed prior to this program point to constrain the type of the object. This may allow the lookup to be resolved.
+2018-06-12 18:18:02 - open MathNet.Numerics.LinearAlgebra
+2018-06-12 18:18:05 - let m = matrix [[ 1.0; 2.0 ]
+2018-06-12 18:18:05 -                 [ 3.0; 4.0 ]]
+2018-06-12 18:18:05 - m.Inverse() 
+2018-06-12 18:18:05 - The value or constructor 'matrix' is not defined. Maybe you want one of the following:
+2018-06-12 18:18:05 -    Matrix
+2018-06-12 18:18:05 -    MatrixBuilder
+2018-06-12 18:18:05 -    MatrixExtensions
+2018-06-12 18:18:05 - Lookup on object of indeterminate type based on information prior to this program point. A type annotation may be needed prior to this program point to constrain the type of the object. This may allow the lookup to be resolved.
+2018-06-12 18:18:15 - let m = Matrix [[ 1.0; 2.0 ]
+2018-06-12 18:18:15 -                 [ 3.0; 4.0 ]]
+2018-06-12 18:18:15 - m.Inverse() 
+2018-06-12 18:18:15 - This type has no accessible object constructors
+2018-06-12 18:18:15 - Lookup on object of indeterminate type based on information prior to this program point. A type annotation may be needed prior to this program point to constrain the type of the object. This may allow the lookup to be resolved.
+2018-06-12 18:18:42 - let m = Matrix [[ 1.0; 2.0 ]
+2018-06-12 18:18:42 -                 [ 3.0; 4.0 ]]
+2018-06-12 18:18:43 - This type has no accessible object constructors
+2018-06-12 18:18:43 - m.Inverse() 
+2018-06-12 18:18:43 - The value, namespace, type or module 'm' is not defined. Maybe you want one of the following:
+2018-06-12 18:18:43 -    MS
+2018-06-12 18:19:32 - let m = matrix [[ 1.0; 2.0 ]
+2018-06-12 18:19:32 -                 [ 3.0; 4.0 ]]
+2018-06-12 18:19:33 - The value or constructor 'matrix' is not defined. Maybe you want one of the following:
+2018-06-12 18:19:33 -    Matrix
+2018-06-12 18:19:33 -    MatrixBuilder
+2018-06-12 18:19:33 -    MatrixExtensions
+2018-06-12 18:21:59 - open MathNet.Numerics
+2018-06-12 18:21:59 - open MathNet.Numerics.LinearAlgebra
+2018-06-12 18:21:59 - open MathNet.Numerics.LinearAlgebra.Double
+2018-06-12 18:22:05 - open MathNet.Numerics
+2018-06-12 18:22:05 - open MathNet.Numerics.LinearAlgebra
+2018-06-12 18:22:05 - open MathNet.Numerics.LinearAlgebra.Double
+2018-06-12 18:22:22 - let m = matrix [[ 1.0; 2.0 ]
+2018-06-12 18:22:22 -                 [ 3.0; 4.0 ]]
+2018-06-12 18:22:23 - The module/namespace 'MathNet.Numerics.LinearAlgebra.Generic' from compilation unit 'MathNet.Numerics' did not contain the namespace, module or type 'Matrix`1'
+2018-06-12 18:22:23 - m.Inverse() 
+2018-06-12 18:22:23 - The value, namespace, type or module 'm' is not defined. Maybe you want one of the following:
+2018-06-12 18:22:23 -    MS
+2018-06-12 18:24:25 - //open MathNet.Numerics
+2018-06-12 18:24:25 - open MathNet.Numerics.LinearAlgebra
+2018-06-12 18:24:25 - //open MathNet.Numerics.LinearAlgebra.Double
+2018-06-12 18:24:25 - let m = matrix [[ 1.0; 2.0 ]
+2018-06-12 18:24:25 -                 [ 3.0; 4.0 ]]
+2018-06-12 18:24:25 - The module/namespace 'MathNet.Numerics.LinearAlgebra.Generic' from compilation unit 'MathNet.Numerics' did not contain the namespace, module or type 'Matrix`1'
+2018-06-12 18:24:26 - shutdown request
+2018-06-12 18:24:32 - // include directory, this will be replaced by the kernel
+2018-06-12 18:24:32 - #I "/home/nbuser/IfSharp/bin"
+2018-06-12 18:24:32 - // load base dlls
+2018-06-12 18:24:32 - #r "IfSharp.Kernel.dll"
+2018-06-12 18:24:32 - #r "NetMQ.dll"
+2018-06-12 18:24:32 - // open the global functions and methods
+2018-06-12 18:24:32 - open IfSharp.Kernel
+2018-06-12 18:24:32 - open IfSharp.Kernel.Globals
+2018-06-12 18:24:58 - shutdown request
+2018-06-12 18:25:03 - // include directory, this will be replaced by the kernel
+2018-06-12 18:25:03 - #I "/home/nbuser/IfSharp/bin"
+2018-06-12 18:25:03 - // load base dlls
+2018-06-12 18:25:03 - #r "IfSharp.Kernel.dll"
+2018-06-12 18:25:03 - #r "NetMQ.dll"
+2018-06-12 18:25:03 - // open the global functions and methods
+2018-06-12 18:25:03 - open IfSharp.Kernel
+2018-06-12 18:25:03 - open IfSharp.Kernel.Globals
+2018-06-12 18:25:04 - shutdown request
+2018-06-12 18:25:07 - // include directory, this will be replaced by the kernel
+2018-06-12 18:25:08 - #I "/home/nbuser/IfSharp/bin"
+2018-06-12 18:25:08 - // load base dlls
+2018-06-12 18:25:08 - #r "IfSharp.Kernel.dll"
+2018-06-12 18:25:08 - #r "NetMQ.dll"
+2018-06-12 18:25:08 - // open the global functions and methods
+2018-06-12 18:25:08 - open IfSharp.Kernel
+2018-06-12 18:25:08 - open IfSharp.Kernel.Globals
+2018-06-12 18:25:31 - shutdown request
+2018-06-12 18:25:36 - // include directory, this will be replaced by the kernel
+2018-06-12 18:25:36 - #I "/home/nbuser/IfSharp/bin"
+2018-06-12 18:25:36 - // load base dlls
+2018-06-12 18:25:36 - #r "IfSharp.Kernel.dll"
+2018-06-12 18:25:36 - #r "NetMQ.dll"
+2018-06-12 18:25:36 - // open the global functions and methods
+2018-06-12 18:25:36 - open IfSharp.Kernel
+2018-06-12 18:25:36 - open IfSharp.Kernel.Globals
+2018-06-12 18:26:07 - F# Interactive for F# 4.1
+2018-06-12 18:26:07 - Freely distributed under the Apache 2.0 Open Source License
+2018-06-12 18:26:07 - For help type #help;;
+2018-06-12 18:26:07 - > val it : ResizeArray<System.Type * (obj -> seq<string * string> * string)> =
+2018-06-12 18:26:07 -   seq []
+2018-06-12 18:26:07 - --> Added '/home/nbuser/IfSharp/bin' to library include path
+2018-06-12 18:26:07 - --> Referenced '/home/nbuser/IfSharp/bin/IfSharp.Kernel.dll' (file may be locked by F# Interactive process)
+2018-06-12 18:26:07 - --> Referenced '/home/nbuser/IfSharp/bin/NetMQ.dll' (file may be locked by F# Interactive process)
+2018-06-12 18:26:30 - (12/4 + 5 + 7) * 4 - 18
+2018-06-12 18:26:31 - let sampleNumbers = [ 0 .. 15 ]
+2018-06-12 18:26:31 - sampleNumbers
+2018-06-12 18:26:52 - /// A function to compute a sample curve
+2018-06-12 18:26:52 - let sampleFunction (x:int) = 
+2018-06-12 18:26:52 -     2*x*x - 5*x + 3
+2018-06-12 18:26:52 - sampleFunction (7 + 4)
+2018-06-12 18:26:52 - sampleFunction (int 3.14 + int 2.79)
+2018-06-12 18:26:52 - if 98.0 < 100.0 then 10 else 20
+2018-06-12 18:26:53 - not false && (true || false)
+2018-06-12 18:26:53 - let helloWorld = "Hello" + " " + "world"
+2018-06-12 18:26:53 - helloWorld
+2018-06-12 18:26:53 - (1, "fred", 3.1415)
+2018-06-12 18:26:54 - open System
+2018-06-12 18:26:54 - let fridaysList = 
+2018-06-12 18:26:54 -     [ for month in 1 .. 6 do
+2018-06-12 18:26:54 -         for day in 1 .. DateTime.DaysInMonth(2017, month) do 
+2018-06-12 18:26:54 -           let date = DateTime(2017, month, day)
+2018-06-12 18:26:54 -           if date.DayOfWeek = DayOfWeek.Friday then 
+2018-06-12 18:26:54 -             yield date.ToShortDateString() ]
+2018-06-12 18:26:54 -               
+2018-06-12 18:26:54 - fridaysList              
+2018-06-12 18:26:55 - let lowNumbers = [| 1 .. 200 |]
+2018-06-12 18:26:55 - lowNumbers
+2018-06-12 18:26:56 - sampleNumbers 
+2018-06-12 18:26:56 - |> List.map (fun x -> x*x) 
+2018-06-12 18:26:56 - let sumOfSelectedSquares = 
+2018-06-12 18:26:56 -     sampleNumbers
+2018-06-12 18:26:56 -     |> List.map (fun x -> x*x) 
+2018-06-12 18:26:56 -     |> List.filter (fun x -> x % 3 = 0)
+2018-06-12 18:26:56 -     |> List.sumBy (fun x -> x * x)
+2018-06-12 18:26:56 -     
+2018-06-12 18:26:56 - sumOfSelectedSquares    
+2018-06-12 18:26:57 - lowNumbers.[0 .. 50]
+2018-06-12 18:26:57 - let rnd = System.Random()
+2018-06-12 18:26:57 - let rec randomWalk x =
+2018-06-12 18:26:57 -     seq { yield x
+2018-06-12 18:26:57 -           yield! randomWalk (x + rnd.NextDouble() - 0.5) }
+2018-06-12 18:26:57 - let firstValuesOfRandomWalk = 
+2018-06-12 18:26:57 -     randomWalk 5.0 
+2018-06-12 18:26:57 -     |> Seq.truncate 20
+2018-06-12 18:26:57 -     |> Seq.toList
+2018-06-12 18:26:57 -     
+2018-06-12 18:26:57 - firstValuesOfRandomWalk
+2018-06-12 18:26:58 - type ContactCard = 
+2018-06-12 18:26:58 -     { Name     : string
+2018-06-12 18:26:58 -       Phone    : string
+2018-06-12 18:26:58 -       Verified : bool
+2018-06-12 18:26:58 -       ZipCode : string option}            
+2018-06-12 18:26:58 -       
+2018-06-12 18:26:58 - let sampleCard = { Name = "Alf" ; Phone = "(206) 555-0157" ; Verified = false; ZipCode=Some "90210" }
+2018-06-12 18:26:58 - sampleCard
+2018-06-12 18:26:59 - let showCard (c: ContactCard) = 
+2018-06-12 18:26:59 -     c.Name + " Phone: " + c.Phone + (if not c.Verified then " (unverified)" else "")
+2018-06-12 18:26:59 -     
+2018-06-12 18:26:59 - showCard sampleCard
+2018-06-12 18:26:59 - open Microsoft.FSharp.Data.UnitSystems.SI.UnitNames
+2018-06-12 18:26:59 - let raceLength = 1600.0<meter>
+2018-06-12 18:26:59 - [<Measure>]
+2018-06-12 18:26:59 - type mile =
+2018-06-12 18:26:59 -     /// Conversion factor mile to meter: meter is defined in SI.UnitNames
+2018-06-12 18:26:59 -     static member asMeter = 1609.344<meter/mile>
+2018-06-12 18:26:59 - /// Distance expressed using imperial units
+2018-06-12 18:26:59 - let distanceToWalk  = 500.0<mile>          
+2018-06-12 18:26:59 - // Same distanceusing metric system
+2018-06-12 18:26:59 - let distanceToWalkInMeters = distanceToWalk * mile.asMeter   
+2018-06-12 18:26:59 - (raceLength, distanceToWalk, distanceToWalkInMeters)
+2018-06-12 18:26:59 - let oneBigArray = [| 0 .. 100000 |]
+2018-06-12 18:26:59 - // Do some CPU intensive computation
+2018-06-12 18:26:59 - let rec computeSomeFunction x = 
+2018-06-12 18:26:59 -     if x <= 2 then 1 
+2018-06-12 18:26:59 -     else computeSomeFunction (x - 1) + computeSomeFunction (x - 2)
+2018-06-12 18:26:59 -        
+2018-06-12 18:26:59 - /// Do a parallel map over a large input array
+2018-06-12 18:26:59 - let computeResults() = oneBigArray |> Array.Parallel.map (fun x -> computeSomeFunction (x % 24))
+2018-06-12 18:26:59 - computeResults()
+2018-06-12 18:27:05 - #load "Paket.fsx"
+2018-06-12 18:27:30 - Paket.Package
+2018-06-12 18:27:30 -   [ "MathNet.Numerics"
+2018-06-12 18:27:30 -     "MathNet.Numerics.FSharp"
+2018-06-12 18:27:30 -   ]
+2018-06-12 18:27:36 - #load "Paket.Generated.Refs.fsx"
+2018-06-12 18:27:36 - //open MathNet.Numerics
+2018-06-12 18:27:36 - open MathNet.Numerics.LinearAlgebra
+2018-06-12 18:27:36 - //open MathNet.Numerics.LinearAlgebra.Double
+2018-06-12 18:27:52 - let m = matrix [[ 1.0; 2.0 ]
+2018-06-12 18:27:52 -                 [ 3.0; 4.0 ]]
+2018-06-12 18:27:53 - The value or constructor 'matrix' is not defined. Maybe you want one of the following:
+2018-06-12 18:27:53 -    Matrix
+2018-06-12 18:27:53 -    MatrixBuilder
+2018-06-12 18:27:53 -    MatrixExtensions
+2018-06-12 18:30:49 - #load "../packages/MathNet.Numerics.FSharp/MathNet.Numerics.fsx"
+2018-06-12 18:30:50 - Unable to find the file '../packages/MathNet.Numerics.FSharp/MathNet.Numerics.fsx' in any of
+2018-06-12 18:30:50 -  /home/nbuser/IfSharp/bin
+2018-06-12 18:30:50 -  /home/nbuser/library
+2018-06-12 18:41:10 - #r @"~/IfSharp/bin/packages/MathNet.Numerics.FSharp/lib/net40/MathNet.Numerics.FSharp.dll"
+2018-06-12 18:41:10 - Unable to find the file '~/IfSharp/bin/packages/MathNet.Numerics.FSharp/lib/net40/MathNet.Numerics.FSharp.dll' in any of
+2018-06-12 18:41:10 -  /usr/lib/mono/4.5
+2018-06-12 18:41:10 -  /usr/lib/mono/4.5/Facades
+2018-06-12 18:41:10 -  /home/nbuser/IfSharp/bin
+2018-06-12 18:41:10 -  /home/nbuser/library
+2018-06-12 18:41:10 -  /home/nbuser/IfSharp/bin/
+2018-06-12 18:42:14 - #r @"MathNet.Numerics.FSharp.dll"
+2018-06-12 18:42:14 - Unable to find the file 'MathNet.Numerics.FSharp.dll' in any of
+2018-06-12 18:42:14 -  /usr/lib/mono/4.5
+2018-06-12 18:42:14 -  /usr/lib/mono/4.5/Facades
+2018-06-12 18:42:14 -  /home/nbuser/IfSharp/bin
+2018-06-12 18:42:14 -  /home/nbuser/library
+2018-06-12 18:42:14 -  /home/nbuser/IfSharp/bin/
+2018-06-12 18:42:39 - #I @"~/IfSharp/bin/packages/MathNet.Numerics.FSharp/lib/net40/"
+2018-06-12 18:42:39 - The search directory '/home/nbuser/library/~/IfSharp/bin/packages/MathNet.Numerics.FSharp/lib/net40/' could not be found
+2018-06-12 18:43:38 - #I @"/home/nbuser/IfSharp/bin/packages/MathNet.Numerics.FSharp/lib/net40/"
+2018-06-12 18:43:42 - #r @"MathNet.Numerics.FSharp.dll"
+2018-06-12 18:43:49 - //open MathNet.Numerics
+2018-06-12 18:43:49 - open MathNet.Numerics.LinearAlgebra
+2018-06-12 18:43:49 - //open MathNet.Numerics.LinearAlgebra.Double
+2018-06-12 18:44:02 - let m = matrix [[ 1.0; 2.0 ]
+2018-06-12 18:44:02 -                 [ 3.0; 4.0 ]]
+2018-06-12 18:44:02 - The value or constructor 'matrix' is not defined. Maybe you want one of the following:
+2018-06-12 18:44:02 -    Matrix
+2018-06-12 18:44:02 -    MatrixBuilder
+2018-06-12 18:44:02 -    MatrixExtensions
+2018-06-12 18:44:02 - m.Inverse() 
+2018-06-12 18:44:02 - The value, namespace, type or module 'm' is not defined. Maybe you want one of the following:
+2018-06-12 18:44:02 -    MS
+2018-06-12 18:44:32 - open MathNet.Numerics.FSharp
+2018-06-12 18:44:32 - The namespace 'FSharp' is not defined.
+2018-06-12 18:53:49 - // include directory, this will be replaced by the kernel
+2018-06-12 18:53:49 - #I "/home/nbuser/IfSharp/bin"
+2018-06-12 18:53:49 - // load base dlls
+2018-06-12 18:53:49 - #r "IfSharp.Kernel.dll"
+2018-06-12 18:53:49 - #r "NetMQ.dll"
+2018-06-12 18:53:49 - // open the global functions and methods
+2018-06-12 18:53:49 - open IfSharp.Kernel
+2018-06-12 18:53:49 - open IfSharp.Kernel.Globals
+2018-06-12 18:54:02 - F# Interactive for F# 4.1
+2018-06-12 18:54:02 - Freely distributed under the Apache 2.0 Open Source License
+2018-06-12 18:54:02 - For help type #help;;
+2018-06-12 18:54:02 - > val it : ResizeArray<System.Type * (obj -> seq<string * string> * string)> =
+2018-06-12 18:54:02 -   seq []
+2018-06-12 18:54:02 - --> Added '/home/nbuser/IfSharp/bin' to library include path
+2018-06-12 18:54:02 - --> Referenced '/home/nbuser/IfSharp/bin/IfSharp.Kernel.dll' (file may be locked by F# Interactive process)
+2018-06-12 18:54:02 - --> Referenced '/home/nbuser/IfSharp/bin/NetMQ.dll' (file may be locked by F# Interactive process)
+2018-06-12 18:54:03 - #load "Paket.Generated.Refs.fsx"
+2018-06-12 18:54:04 - //#load "../packages/MathNet.Numerics.FSharp/MathNet.Numerics.fsx"
+2018-06-12 18:54:11 - #I @"/home/nbuser/IfSharp/bin/packages/MathNet.Numerics.FSharp/lib/net40/"
+2018-06-12 18:54:12 - #r @"MathNet.Numerics.FSharp.dll"
+2018-06-12 18:54:17 - //open MathNet.Numerics
+2018-06-12 18:54:17 - open MathNet.Numerics.LinearAlgebra
+2018-06-12 18:54:17 - //open MathNet.Numerics.LinearAlgebra.Double
+2018-06-12 18:54:24 - let m = matrix [[ 1.0; 2.0 ]
+2018-06-12 18:54:24 -                 [ 3.0; 4.0 ]]
+2018-06-12 18:54:24 - The value or constructor 'matrix' is not defined. Maybe you want one of the following:
+2018-06-12 18:54:24 -    Matrix
+2018-06-12 18:54:24 -    MatrixBuilder
+2018-06-12 18:54:24 -    MatrixExtensions
+2018-06-12 19:05:17 - Unknown content type on shell. msg_type is `comm_info_request`
+2018-06-12 19:05:31 - #load "Paket.fsx"
+2018-06-12 19:05:46 - #load "Paket.Generated.Refs.fsx"
+2018-06-12 19:05:52 - //#load "../packages/MathNet.Numerics.FSharp/MathNet.Numerics.fsx"
+2018-06-12 19:05:54 - #I @"/home/nbuser/IfSharp/bin/packages/MathNet.Numerics.FSharp/lib/net40/"
+2018-06-12 19:05:55 - #r @"MathNet.Numerics.FSharp.dll"
+2018-06-12 19:05:57 - //open MathNet.Numerics
+2018-06-12 19:05:57 - open MathNet.Numerics.LinearAlgebra
+2018-06-12 19:05:57 - //open MathNet.Numerics.LinearAlgebra.Double
+2018-06-12 19:08:43 - #r @"MathNet.Numerics.FSharp.dll"
+2018-06-12 19:08:48 - //open MathNet.Numerics
+2018-06-12 19:08:48 - open MathNet.Numerics.LinearAlgebra
+2018-06-12 19:08:48 - //open MathNet.Numerics.LinearAlgebra.Double
+2018-06-12 19:08:48 - let m = matrix [[ 1.0; 2.0 ]
+2018-06-12 19:08:48 -                 [ 3.0; 4.0 ]]
+2018-06-12 19:08:48 - The value or constructor 'matrix' is not defined. Maybe you want one of the following:
+2018-06-12 19:08:48 -    Matrix
+2018-06-12 19:08:48 -    MatrixBuilder
+2018-06-12 19:08:48 -    MatrixExtensions
+2018-06-12 19:14:13 - ** Unfortunately this won't work!!!**
+2018-06-12 19:14:13 - Unexpected infix operator in interaction
+2018-06-12 19:14:13 - Identifiers followed by '!' are reserved for future use
+2018-06-12 19:14:13 - parse error
+2018-06-12 19:14:23 - let m = matrix [[ 1.0; 2.0 ]
+2018-06-12 19:14:23 -                 [ 3.0; 4.0 ]]
+2018-06-12 19:14:23 - The value or constructor 'matrix' is not defined. Maybe you want one of the following:
+2018-06-12 19:14:23 -    Matrix
+2018-06-12 19:14:23 -    MatrixBuilder
+2018-06-12 19:14:23 -    MatrixExtensions
+2018-06-12 19:16:00 - // Path to FSharp dll
+2018-06-12 19:16:00 - #I @"/home/nbuser/IfSharp/bin/packages/MathNet.Numerics.FSharp/lib/net40/"
+2018-06-12 19:16:00 - #r @"MathNet.Numerics.FSharp.dll"
+2018-06-12 19:16:20 - open MathNet.Numerics
+2018-06-12 19:16:20 - open MathNet.Numerics.LinearAlgebra
+2018-06-12 19:16:20 - open MathNet.Numerics.LinearAlgebra.Double
+2018-06-12 19:16:27 - let m = matrix [[ 1.0; 2.0 ]
+2018-06-12 19:16:27 -                 [ 3.0; 4.0 ]]
+2018-06-12 19:16:27 - The module/namespace 'MathNet.Numerics.LinearAlgebra.Generic' from compilation unit 'MathNet.Numerics' did not contain the namespace, module or type 'Matrix`1'
+2018-06-12 19:58:29 - // Comment this out - the fsx file is not to be found!
+2018-06-12 19:58:29 - #load "../packages/MathNet.Numerics.FSharp/MathNet.Numerics.fsx"
+2018-06-12 19:58:29 - Unable to find the file '../packages/MathNet.Numerics.FSharp/MathNet.Numerics.fsx' in any of
+2018-06-12 19:58:29 -  /home/nbuser/IfSharp/bin
+2018-06-12 19:58:29 -  /home/nbuser/IfSharp/bin/packages/MathNet.Numerics.FSharp/lib/net40/
+2018-06-12 19:58:29 -  /home/nbuser/library
+2018-06-12 20:01:16 - // Path to FSharp dll
+2018-06-12 20:01:16 - #I @"/home/nbuser/IfSharp/bin/packages/MathNet.Numerics.FSharp/lib/net40/"
+2018-06-12 20:01:16 - #r @"MathNet.Numerics.FSharp.dll"
+2018-06-12 20:01:17 - //open MathNet.Numerics
+2018-06-12 20:01:17 - open MathNet.Numerics.LinearAlgebra
+2018-06-12 20:01:17 - //open MathNet.Numerics.LinearAlgebra.Double
+2018-06-12 20:01:17 - let m = matrix [[ 1.0; 2.0 ]
+2018-06-12 20:01:17 -                 [ 3.0; 4.0 ]]
+2018-06-12 20:01:17 - The module/namespace 'MathNet.Numerics.LinearAlgebra.Generic' from compilation unit 'MathNet.Numerics' did not contain the namespace, module or type 'Matrix`1'
+2018-06-12 20:01:32 - // include directory, this will be replaced by the kernel
+2018-06-12 20:01:32 - #I "/home/nbuser/IfSharp/bin"
+2018-06-12 20:01:32 - // load base dlls
+2018-06-12 20:01:32 - #r "IfSharp.Kernel.dll"
+2018-06-12 20:01:32 - #r "NetMQ.dll"
+2018-06-12 20:01:32 - // open the global functions and methods
+2018-06-12 20:01:32 - open IfSharp.Kernel
+2018-06-12 20:01:32 - open IfSharp.Kernel.Globals
+2018-06-12 20:01:33 - shutdown request
+2018-06-12 20:01:36 - // include directory, this will be replaced by the kernel
+2018-06-12 20:01:36 - #I "/home/nbuser/IfSharp/bin"
+2018-06-12 20:01:36 - // load base dlls
+2018-06-12 20:01:36 - #r "IfSharp.Kernel.dll"
+2018-06-12 20:01:36 - #r "NetMQ.dll"
+2018-06-12 20:01:36 - // open the global functions and methods
+2018-06-12 20:01:36 - open IfSharp.Kernel
+2018-06-12 20:01:36 - open IfSharp.Kernel.Globals
+2018-06-12 20:01:54 - F# Interactive for F# 4.1
+2018-06-12 20:01:54 - Freely distributed under the Apache 2.0 Open Source License
+2018-06-12 20:01:54 - For help type #help;;
+2018-06-12 20:01:54 - > val it : ResizeArray<System.Type * (obj -> seq<string * string> * string)> =
+2018-06-12 20:01:54 -   seq []
+2018-06-12 20:01:54 - --> Added '/home/nbuser/IfSharp/bin' to library include path
+2018-06-12 20:01:54 - --> Referenced '/home/nbuser/IfSharp/bin/IfSharp.Kernel.dll' (file may be locked by F# Interactive process)
+2018-06-12 20:01:54 - --> Referenced '/home/nbuser/IfSharp/bin/NetMQ.dll' (file may be locked by F# Interactive process)
+2018-06-12 20:01:56 - #load "Paket.fsx"
+2018-06-12 20:02:03 - Paket.Package
+2018-06-12 20:02:03 -   [ "MathNet.Numerics"
+2018-06-12 20:02:03 -     "MathNet.Numerics.FSharp"
+2018-06-12 20:02:03 -   ]
+2018-06-12 20:02:07 - // See folder /IfSharp/bin/
+2018-06-12 20:02:07 - #load "Paket.Generated.Refs.fsx"
+2018-06-12 20:02:07 - // Contains: #load @".paket/load/main.group.fsx"
+2018-06-12 20:02:08 - // Comment this out - the fsx file is not to be found!
+2018-06-12 20:02:08 - #load "../packages/MathNet.Numerics.FSharp/MathNet.Numerics.fsx"
+2018-06-12 20:02:09 - Unable to find the file '../packages/MathNet.Numerics.FSharp/MathNet.Numerics.fsx' in any of
+2018-06-12 20:02:09 -  /home/nbuser/IfSharp/bin
+2018-06-12 20:02:09 -  /home/nbuser/library
+2018-06-12 20:02:09 - // Path to FSharp dll
+2018-06-12 20:02:09 - #I @"/home/nbuser/IfSharp/bin/packages/MathNet.Numerics.FSharp/lib/net40/"
+2018-06-12 20:02:09 - #r @"MathNet.Numerics.FSharp.dll"
+2018-06-12 20:02:09 - //open MathNet.Numerics
+2018-06-12 20:02:09 - open MathNet.Numerics.LinearAlgebra
+2018-06-12 20:02:09 - //open MathNet.Numerics.LinearAlgebra.Double
+2018-06-12 20:02:10 - let m = matrix [[ 1.0; 2.0 ]
+2018-06-12 20:02:10 -                 [ 3.0; 4.0 ]]
+2018-06-12 20:02:10 - The value or constructor 'matrix' is not defined. Maybe you want one of the following:
+2018-06-12 20:02:10 -    Matrix
+2018-06-12 20:02:10 -    MatrixBuilder
+2018-06-12 20:02:10 -    MatrixExtensions
+2018-06-12 20:38:30 - Unknown content type on shell. msg_type is `comm_info_request`
+2018-06-12 20:44:49 - Unknown content type on shell. msg_type is `comm_info_request`
+2018-06-13 13:51:30 - // include directory, this will be replaced by the kernel
+2018-06-13 13:51:30 - #I "/home/nbuser/IfSharp/bin"
+2018-06-13 13:51:30 - // load base dlls
+2018-06-13 13:51:30 - #r "IfSharp.Kernel.dll"
+2018-06-13 13:51:30 - #r "NetMQ.dll"
+2018-06-13 13:51:30 - // open the global functions and methods
+2018-06-13 13:51:30 - open IfSharp.Kernel
+2018-06-13 13:51:30 - open IfSharp.Kernel.Globals
+2018-06-13 13:51:55 - F# Interactive for F# 4.1
+2018-06-13 13:51:55 - Freely distributed under the Apache 2.0 Open Source License
+2018-06-13 13:51:55 - For help type #help;;
+2018-06-13 13:51:55 - > val it : ResizeArray<System.Type * (obj -> seq<string * string> * string)> =
+2018-06-13 13:51:55 -   seq []
+2018-06-13 13:51:55 - --> Added '/home/nbuser/IfSharp/bin' to library include path
+2018-06-13 13:51:55 - --> Referenced '/home/nbuser/IfSharp/bin/IfSharp.Kernel.dll' (file may be locked by F# Interactive process)
+2018-06-13 13:51:55 - --> Referenced '/home/nbuser/IfSharp/bin/NetMQ.dll' (file may be locked by F# Interactive process)
+2018-06-13 13:51:56 - Unknown content type on shell. msg_type is `comm_info_request`
+2018-06-13 13:52:10 - (12/4 + 5 + 7) * 4 - 18
+2018-06-13 13:58:11 - let sampleNumbers = [ 0 .. 15 ]
+2018-06-13 13:58:11 - sampleNumbers
+2018-06-13 13:58:21 - #load "Paket.fsx"
+2018-06-13 13:58:30 - Paket.Package
+2018-06-13 13:58:30 -   [ "MathNet.Numerics"
+2018-06-13 13:58:30 -     "MathNet.Numerics.FSharp"
+2018-06-13 13:58:30 -   ]
+2018-06-13 13:58:54 - // See folder /IfSharp/bin/
+2018-06-13 13:58:54 - #load "Paket.Generated.Refs.fsx"
+2018-06-13 13:58:54 - // Contains: #load @".paket/load/main.group.fsx"
+2018-06-13 13:59:38 - //open MathNet.Numerics
+2018-06-13 13:59:38 - open MathNet.Numerics.LinearAlgebra
+2018-06-13 13:59:38 - //open MathNet.Numerics.LinearAlgebra.Double
+2018-06-13 13:59:42 - let m = matrix [[ 1.0; 2.0 ]
+2018-06-13 13:59:42 -                 [ 3.0; 4.0 ]]
+2018-06-13 13:59:42 - The value or constructor 'matrix' is not defined. Maybe you want one of the following:
+2018-06-13 13:59:42 -    Matrix
+2018-06-13 13:59:42 -    MatrixBuilder
+2018-06-13 13:59:42 -    MatrixExtensions
+2018-06-13 19:43:40 - // include directory, this will be replaced by the kernel
+2018-06-13 19:43:40 - #I "/home/nbuser/IfSharp/bin"
+2018-06-13 19:43:40 - // load base dlls
+2018-06-13 19:43:40 - #r "IfSharp.Kernel.dll"
+2018-06-13 19:43:40 - #r "NetMQ.dll"
+2018-06-13 19:43:40 - // open the global functions and methods
+2018-06-13 19:43:40 - open IfSharp.Kernel
+2018-06-13 19:43:40 - open IfSharp.Kernel.Globals
+2018-06-13 19:43:46 - F# Interactive for F# 4.1
+2018-06-13 19:43:46 - Freely distributed under the Apache 2.0 Open Source License
+2018-06-13 19:43:46 - For help type #help;;
+2018-06-13 19:43:46 - > val it : ResizeArray<System.Type * (obj -> seq<string * string> * string)> =
+2018-06-13 19:43:46 -   seq []
+2018-06-13 19:43:46 - --> Added '/home/nbuser/IfSharp/bin' to library include path
+2018-06-13 19:43:46 - --> Referenced '/home/nbuser/IfSharp/bin/IfSharp.Kernel.dll' (file may be locked by F# Interactive process)
+2018-06-13 19:43:46 - --> Referenced '/home/nbuser/IfSharp/bin/NetMQ.dll' (file may be locked by F# Interactive process)
+2018-06-13 19:43:47 - Unknown content type on shell. msg_type is `comm_info_request`
+2018-06-14 14:52:19 - // include directory, this will be replaced by the kernel
+2018-06-14 14:52:19 - #I "/home/nbuser/IfSharp/bin"
+2018-06-14 14:52:19 - // load base dlls
+2018-06-14 14:52:19 - #r "IfSharp.Kernel.dll"
+2018-06-14 14:52:19 - #r "NetMQ.dll"
+2018-06-14 14:52:19 - // open the global functions and methods
+2018-06-14 14:52:19 - open IfSharp.Kernel
+2018-06-14 14:52:19 - open IfSharp.Kernel.Globals
+2018-06-14 14:52:51 - F# Interactive for F# 4.1
+2018-06-14 14:52:51 - Freely distributed under the Apache 2.0 Open Source License
+2018-06-14 14:52:51 - For help type #help;;
+2018-06-14 14:52:51 - > val it : ResizeArray<System.Type * (obj -> seq<string * string> * string)> =
+2018-06-14 14:52:51 -   seq []
+2018-06-14 14:52:51 - --> Added '/home/nbuser/IfSharp/bin' to library include path
+2018-06-14 14:52:51 - --> Referenced '/home/nbuser/IfSharp/bin/IfSharp.Kernel.dll' (file may be locked by F# Interactive process)
+2018-06-14 14:52:51 - --> Referenced '/home/nbuser/IfSharp/bin/NetMQ.dll' (file may be locked by F# Interactive process)
+2018-06-14 14:52:52 - Unknown content type on shell. msg_type is `comm_info_request`
+2018-06-14 14:53:12 - #load "Paket.fsx"
+2018-06-14 14:53:20 - Paket.Package
+2018-06-14 14:53:20 -   [ "MathNet.Numerics"
+2018-06-14 14:53:20 -     "MathNet.Numerics.FSharp"
+2018-06-14 14:53:20 -   ]
+2018-06-14 14:53:39 - #load "Paket.Generated.Refs.fsx"
+2018-06-14 14:53:40 - // See folder /IfSharp/bin/
+2018-06-14 14:53:40 - // Contains: #load @".paket/load/main.group.fsx"
+2018-06-14 14:53:40 - // In the past it was possible to load an fsx script - but the fsx file is not to be found?
+2018-06-14 14:53:40 - //#load "../packages/MathNet.Numerics.FSharp/MathNet.Numerics.fsx"
+2018-06-14 14:54:21 - // Path to FSharp dll
+2018-06-14 14:54:21 - // #I @"/home/nbuser/IfSharp/bin/packages/MathNet.Numerics.FSharp/lib/net40/"
+2018-06-14 14:54:21 - // #r @"MathNet.Numerics.FSharp.dll"
+2018-06-14 14:54:21 - //open MathNet.Numerics
+2018-06-14 14:54:21 - open MathNet.Numerics.LinearAlgebra
+2018-06-14 14:54:21 - //open MathNet.Numerics.LinearAlgebra.Double
+2018-06-14 14:54:22 - let m = matrix [[ 1.0; 2.0 ]
+2018-06-14 14:54:22 -                 [ 3.0; 4.0 ]]
+2018-06-14 14:54:22 - The value or constructor 'matrix' is not defined. Maybe you want one of the following:
+2018-06-14 14:54:22 -    Matrix
+2018-06-14 14:54:22 -    MatrixBuilder
+2018-06-14 14:54:22 -    MatrixExtensions
+2018-06-14 14:55:10 - // Path to FSharp dll
+2018-06-14 14:55:10 - // #I @"/home/nbuser/IfSharp/bin/packages/MathNet.Numerics.FSharp/lib/net40/"
+2018-06-14 14:55:10 - // #r @"MathNet.Numerics.FSharp.dll"
+2018-06-14 14:55:11 - //open MathNet.Numerics
+2018-06-14 14:55:11 - open MathNet.Numerics.LinearAlgebra
+2018-06-14 14:55:11 - //open MathNet.Numerics.LinearAlgebra.Double
+2018-06-14 14:55:11 - let m = matrix [[ 1.0; 2.0 ]
+2018-06-14 14:55:11 -                 [ 3.0; 4.0 ]]
+2018-06-14 14:55:11 - The value or constructor 'matrix' is not defined. Maybe you want one of the following:
+2018-06-14 14:55:11 -    Matrix
+2018-06-14 14:55:11 -    MatrixBuilder
+2018-06-14 14:55:11 -    MatrixExtensions
+2018-06-14 14:55:11 - m.Inverse() 
+2018-06-14 14:55:12 - The value, namespace, type or module 'm' is not defined. Maybe you want one of the following:
+2018-06-14 14:55:12 -    MS
+2018-06-14 14:55:31 - shutdown request
+2018-06-14 14:55:36 - // include directory, this will be replaced by the kernel
+2018-06-14 14:55:36 - #I "/home/nbuser/IfSharp/bin"
+2018-06-14 14:55:36 - // load base dlls
+2018-06-14 14:55:36 - #r "IfSharp.Kernel.dll"
+2018-06-14 14:55:36 - #r "NetMQ.dll"
+2018-06-14 14:55:36 - // open the global functions and methods
+2018-06-14 14:55:36 - open IfSharp.Kernel
+2018-06-14 14:55:36 - open IfSharp.Kernel.Globals
+2018-06-14 14:56:00 - F# Interactive for F# 4.1
+2018-06-14 14:56:00 - Freely distributed under the Apache 2.0 Open Source License
+2018-06-14 14:56:00 - For help type #help;;
+2018-06-14 14:56:00 - > val it : ResizeArray<System.Type * (obj -> seq<string * string> * string)> =
+2018-06-14 14:56:00 -   seq []
+2018-06-14 14:56:00 - --> Added '/home/nbuser/IfSharp/bin' to library include path
+2018-06-14 14:56:00 - --> Referenced '/home/nbuser/IfSharp/bin/IfSharp.Kernel.dll' (file may be locked by F# Interactive process)
+2018-06-14 14:56:00 - --> Referenced '/home/nbuser/IfSharp/bin/NetMQ.dll' (file may be locked by F# Interactive process)
+2018-06-14 14:56:01 - #load "Paket.fsx"
+2018-06-14 14:56:11 - Paket.Package
+2018-06-14 14:56:11 -   [ "MathNet.Numerics"
+2018-06-14 14:56:11 -     "MathNet.Numerics.FSharp"
+2018-06-14 14:56:11 -   ]
+2018-06-14 14:56:16 - (*
+2018-06-14 14:56:16 - In ~/IfSharp/bin/paket.dependencies we see:
+2018-06-14 14:56:16 - generate_load_scripts: true
+2018-06-14 14:56:16 - source https://www.nuget.org/api/v2
+2018-06-14 14:56:16 - nuget FSharp.Core ~> 4.2.1
+2018-06-14 14:56:16 - nuget MathNet.Numerics
+2018-06-14 14:56:16 - nuget MathNet.Numerics.FSharp
+2018-06-14 14:56:16 - *)
+2018-06-14 14:56:16 - #load "Paket.Generated.Refs.fsx"
+2018-06-14 15:02:08 - // include directory, this will be replaced by the kernel
+2018-06-14 15:02:08 - #I "/home/nbuser/IfSharp/bin"
+2018-06-14 15:02:08 - // load base dlls
+2018-06-14 15:02:08 - #r "IfSharp.Kernel.dll"
+2018-06-14 15:02:08 - #r "NetMQ.dll"
+2018-06-14 15:02:08 - // open the global functions and methods
+2018-06-14 15:02:08 - open IfSharp.Kernel
+2018-06-14 15:02:08 - open IfSharp.Kernel.Globals
+2018-06-14 15:02:23 - F# Interactive for F# 4.1
+2018-06-14 15:02:23 - Freely distributed under the Apache 2.0 Open Source License
+2018-06-14 15:02:23 - For help type #help;;
+2018-06-14 15:02:23 - > val it : ResizeArray<System.Type * (obj -> seq<string * string> * string)> =
+2018-06-14 15:02:23 -   seq []
+2018-06-14 15:02:23 - --> Added '/home/nbuser/IfSharp/bin' to library include path
+2018-06-14 15:02:23 - --> Referenced '/home/nbuser/IfSharp/bin/IfSharp.Kernel.dll' (file may be locked by F# Interactive process)
+2018-06-14 15:02:23 - --> Referenced '/home/nbuser/IfSharp/bin/NetMQ.dll' (file may be locked by F# Interactive process)
+2018-06-14 15:02:23 - Unknown content type on shell. msg_type is `comm_info_request`
+2018-06-14 15:03:38 - #load "Paket.fsx"
+2018-06-14 15:03:40 - Paket.Package
+2018-06-14 15:03:40 -   [ "MathNet.Numerics"
+2018-06-14 15:03:40 -     "MathNet.Numerics.FSharp"
+2018-06-14 15:03:40 -   ]
+2018-06-14 15:03:48 - (*
+2018-06-14 15:03:48 - In ~/IfSharp/bin/paket.dependencies we see:
+2018-06-14 15:03:48 - generate_load_scripts: true
+2018-06-14 15:03:48 - source https://www.nuget.org/api/v2
+2018-06-14 15:03:48 - nuget FSharp.Core ~> 4.2.1
+2018-06-14 15:03:48 - nuget MathNet.Numerics
+2018-06-14 15:03:48 - nuget MathNet.Numerics.FSharp
+2018-06-14 15:03:48 - *)
+2018-06-14 15:03:52 - #load "Paket.Generated.Refs.fsx"
+2018-06-14 15:04:52 - //open MathNet.Numerics
+2018-06-14 15:04:52 - open MathNet.Numerics.LinearAlgebra
+2018-06-14 15:04:52 - //open MathNet.Numerics.LinearAlgebra.Double
+2018-06-14 15:04:59 - let m = matrix [[ 1.0; 2.0 ]
+2018-06-14 15:04:59 -                 [ 3.0; 4.0 ]]
+2018-06-14 15:05:00 - The value or constructor 'matrix' is not defined. Maybe you want one of the following:
+2018-06-14 15:05:00 -    Matrix
+2018-06-14 15:05:00 -    MatrixBuilder
+2018-06-14 15:05:00 -    MatrixExtensions
+2018-06-14 15:06:42 - open System
+2018-06-14 15:06:42 - open System.IO
+2018-06-14 15:06:43 - let lines = File.ReadAllLines(@"../IfSharp/bin/Paket.Generated.Refs.fsx")
+2018-06-14 15:06:43 - lines
+2018-06-14 15:06:44 - let lines2 = File.ReadAllLines(@"../IfSharp/bin/.paket/load/main.group.fsx")
+2018-06-14 15:06:44 - lines2
+2018-06-14 15:09:09 - File.ReadAllLines(@"../IfSharp/bin/Paket.Generated.Refs.fsx")
+2018-06-14 15:09:29 - File.ReadAllLines(@"../IfSharp/bin/.paket/load/main.group.fsx")
+2018-06-14 15:09:42 - File.Read(@"../IfSharp/bin/Paket.Generated.Refs.fsx")
+2018-06-14 15:09:42 - The field, constructor or member 'Read' is not defined. Maybe you want one of the following:
+2018-06-14 15:09:42 -    ReadLines
+2018-06-14 15:09:42 -    ReadAllText
+2018-06-14 15:09:42 -    ReadAllBytes
+2018-06-14 15:09:42 -    ReadAllLines
+2018-06-14 15:09:55 - File.ReadAllText(@"../IfSharp/bin/Paket.Generated.Refs.fsx")
+2018-06-14 15:10:13 - File.ReadAllText(@"../IfSharp/bin/.paket/load/main.group.fsx")
+2018-06-14 15:11:18 - File.ReadAllText(@"../IfSharp/bin/paket.dependencies")
+2018-06-14 15:11:38 - open System
+2018-06-14 15:11:38 - open System.IO
+2018-06-14 15:11:38 - Paket.Package
+2018-06-14 15:11:38 -   [ "MathNet.Numerics"
+2018-06-14 15:11:38 -     "MathNet.Numerics.FSharp"
+2018-06-14 15:11:38 -   ]
+2018-06-14 15:11:40 - File.ReadAllText(@"../IfSharp/bin/paket.dependencies")
+2018-06-14 15:11:41 - (*
+2018-06-14 15:11:41 - In ~/IfSharp/bin/paket.dependencies we see:
+2018-06-14 15:11:41 - generate_load_scripts: true
+2018-06-14 15:11:41 - source https://www.nuget.org/api/v2
+2018-06-14 15:11:41 - nuget FSharp.Core ~> 4.2.1
+2018-06-14 15:11:41 - nuget MathNet.Numerics
+2018-06-14 15:11:41 - nuget MathNet.Numerics.FSharp
+2018-06-14 15:11:41 - *)
+2018-06-14 15:11:42 - #load "Paket.Generated.Refs.fsx"
+2018-06-14 15:11:42 - File.ReadAllText(@"../IfSharp/bin/Paket.Generated.Refs.fsx")
+2018-06-14 15:11:43 - File.ReadAllText(@"../IfSharp/bin/.paket/load/main.group.fsx")
+2018-06-14 15:13:44 - shutdown request
+2018-06-14 15:13:47 - // include directory, this will be replaced by the kernel
+2018-06-14 15:13:47 - #I "/home/nbuser/IfSharp/bin"
+2018-06-14 15:13:47 - // load base dlls
+2018-06-14 15:13:47 - #r "IfSharp.Kernel.dll"
+2018-06-14 15:13:47 - #r "NetMQ.dll"
+2018-06-14 15:13:47 - // open the global functions and methods
+2018-06-14 15:13:47 - open IfSharp.Kernel
+2018-06-14 15:13:47 - open IfSharp.Kernel.Globals
+2018-06-14 15:13:55 - F# Interactive for F# 4.1
+2018-06-14 15:13:55 - Freely distributed under the Apache 2.0 Open Source License
+2018-06-14 15:13:55 - For help type #help;;
+2018-06-14 15:13:55 - > val it : ResizeArray<System.Type * (obj -> seq<string * string> * string)> =
+2018-06-14 15:13:55 -   seq []
+2018-06-14 15:13:55 - --> Added '/home/nbuser/IfSharp/bin' to library include path
+2018-06-14 15:13:55 - --> Referenced '/home/nbuser/IfSharp/bin/IfSharp.Kernel.dll' (file may be locked by F# Interactive process)
+2018-06-14 15:13:55 - --> Referenced '/home/nbuser/IfSharp/bin/NetMQ.dll' (file may be locked by F# Interactive process)
+2018-06-14 15:13:56 - open System
+2018-06-14 15:13:56 - open System.IO
+2018-06-14 15:13:56 - #load "Paket.fsx"
+2018-06-14 15:14:00 - Paket.Package
+2018-06-14 15:14:00 -   [ "MathNet.Numerics"
+2018-06-14 15:14:00 -     "MathNet.Numerics.FSharp"
+2018-06-14 15:14:00 -   ]
+2018-06-14 15:14:02 - File.ReadAllText(@"../IfSharp/bin/paket.dependencies")
+2018-06-14 15:14:02 - #load "Paket.Generated.Refs.fsx"
+2018-06-14 15:14:03 - File.ReadAllText(@"../IfSharp/bin/Paket.Generated.Refs.fsx")
+2018-06-14 15:14:03 - File.ReadAllText(@"../IfSharp/bin/.paket/load/main.group.fsx")
+2018-06-14 15:14:03 - open MathNet.Numerics.LinearAlgebra
+2018-06-14 15:14:03 - let m = matrix [[ 1.0; 2.0 ]
+2018-06-14 15:14:03 -                 [ 3.0; 4.0 ]]
+2018-06-14 15:14:04 - The value or constructor 'matrix' is not defined. Maybe you want one of the following:
+2018-06-14 15:14:04 -    Matrix
+2018-06-14 15:14:04 -    MatrixBuilder
+2018-06-14 15:14:04 -    MatrixExtensions
+2018-06-14 15:31:55 - File.a
+2018-06-14 15:31:55 - The field, constructor or member 'a' is not defined.
+2018-06-14 15:32:29 - File.GetAttributes(@"../IfSharp/bin/paket.dependencies")
+2018-06-14 15:33:13 - File.GetLastWriteTime(@"../IfSharp/bin/paket.dependencies")
+2018-06-14 15:34:51 - File.GetLastWriteTime(@"../IfSharp/bin/.paket/load/main.group.fsx")
+2018-06-14 15:35:14 - Paket.Package
+2018-06-14 15:35:14 -   [ "MathNet.Numerics"
+2018-06-14 15:35:14 -     "MathNet.Numerics.FSharp"
+2018-06-14 15:35:14 -   ]
+2018-06-14 15:35:22 - File.ReadAllText(@"../IfSharp/bin/paket.dependencies")
+2018-06-14 15:35:22 - File.GetLastWriteTime(@"../IfSharp/bin/paket.dependencies")
+2018-06-14 15:35:29 - #load "Paket.Generated.Refs.fsx"
+2018-06-14 15:35:36 - File.ReadAllText(@"../IfSharp/bin/Paket.Generated.Refs.fsx")
+2018-06-14 15:35:36 - File.ReadAllText(@"../IfSharp/bin/.paket/load/main.group.fsx")
+2018-06-14 15:35:36 - File.GetLastWriteTime(@"../IfSharp/bin/.paket/load/main.group.fsx")
+2018-06-14 15:36:17 - Paket.Package
+2018-06-14 15:36:17 -   [ "MathNet.Numerics"
+2018-06-14 15:36:17 -     "MathNet.Numerics.FSharp"
+2018-06-14 15:36:17 -     "Microsoft.ML"
+2018-06-14 15:36:17 -   ]
+2018-06-14 15:36:21 - File.ReadAllText(@"../IfSharp/bin/paket.dependencies")
+2018-06-14 15:36:27 - File.GetLastWriteTime(@"../IfSharp/bin/paket.dependencies")
+2018-06-14 15:36:29 - #load "Paket.Generated.Refs.fsx"
+2018-06-14 15:36:35 - File.ReadAllText(@"../IfSharp/bin/Paket.Generated.Refs.fsx")
+2018-06-14 15:36:35 - File.ReadAllText(@"../IfSharp/bin/.paket/load/main.group.fsx")
+2018-06-14 15:36:42 - File.GetLastWriteTime(@"../IfSharp/bin/.paket/load/main.group.fsx")
+2018-06-14 15:37:18 - File.ReadAllText(@"../IfSharp/paket.dependencies")
+2018-06-14 15:38:42 - File.GetLastWriteTime(@"../IfSharp/paket.dependencies")
+2018-06-14 15:40:48 - File.ReadAllText(@"../IfSharp/bin/paket.lock")
+2018-06-14 15:41:47 - File.GetLastWriteTime(@"../IfSharp/bin/paket.lock")
+2018-06-18 15:46:00 - // include directory, this will be replaced by the kernel
+2018-06-18 15:46:00 - #I "/home/nbuser/IfSharp/bin"
+2018-06-18 15:46:00 - // load base dlls
+2018-06-18 15:46:00 - #r "IfSharp.Kernel.dll"
+2018-06-18 15:46:00 - #r "NetMQ.dll"
+2018-06-18 15:46:00 - // open the global functions and methods
+2018-06-18 15:46:00 - open IfSharp.Kernel
+2018-06-18 15:46:00 - open IfSharp.Kernel.Globals
+2018-06-18 15:46:36 - F# Interactive for F# 4.1
+2018-06-18 15:46:36 - Freely distributed under the Apache 2.0 Open Source License
+2018-06-18 15:46:36 - For help type #help;;
+2018-06-18 15:46:36 - > val it : ResizeArray<System.Type * (obj -> seq<string * string> * string)> =
+2018-06-18 15:46:36 -   seq []
+2018-06-18 15:46:36 - --> Added '/home/nbuser/IfSharp/bin' to library include path
+2018-06-18 15:46:36 - --> Referenced '/home/nbuser/IfSharp/bin/IfSharp.Kernel.dll' (file may be locked by F# Interactive process)
+2018-06-18 15:46:36 - --> Referenced '/home/nbuser/IfSharp/bin/NetMQ.dll' (file may be locked by F# Interactive process)
+2018-06-18 15:46:37 - Unknown content type on shell. msg_type is `comm_info_request`
+2018-06-18 15:51:42 - open System
+2018-06-18 15:51:42 - open System.IO
+2018-06-18 15:51:42 - #load "Paket.fsx"
+2018-06-18 15:51:53 - Paket.Package
+2018-06-18 15:51:53 -   [ "MathNet.Numerics"
+2018-06-18 15:51:53 -     "MathNet.Numerics.FSharp"
+2018-06-18 15:51:53 -     "Microsoft.ML"
+2018-06-18 15:51:53 -   ]
+2018-06-18 15:52:37 - File.ReadAllText(@"../IfSharp/paket.dependencies")
+2018-06-18 15:52:38 - File.GetLastWriteTime(@"../IfSharp/paket.dependencies")
+2018-06-18 15:52:38 - File.ReadAllText(@"../IfSharp/bin/paket.dependencies")
+2018-06-18 15:52:38 - File.GetLastWriteTime(@"../IfSharp/bin/paket.dependencies")
+2018-06-18 15:52:39 - File.ReadAllText(@"../IfSharp/bin/paket.lock")
+2018-06-18 15:52:39 - File.GetLastWriteTime(@"../IfSharp/bin/paket.lock")
+2018-06-18 15:53:47 - open System
+2018-06-18 15:53:47 - open System.IO
+2018-06-18 15:53:47 - open Paket
+2018-06-18 15:53:47 - let dependencies = Dependencies.Locate(__SOURCE_DIRECTORY__) // /home/nbuser/library
+2018-06-18 15:53:47 - dependencies.GetInstalledPackages()
+2018-06-18 15:53:47 - [("Main", "Angara.Base", "0.3.2"); ("Main", "Angara.Chart", "0.3.1");
+2018-06-18 15:53:47 -  ("Main", "Angara.Chart.CSharp", "0.3.1"); ("Main", "Angara.Html", "0.3.2");
+2018-06-18 15:53:47 -  ("Main", "Angara.Reinstate", "0.3.2"); ("Main", "Angara.Serialization", "0.3");
+2018-06-18 15:53:47 -  ("Main", "Angara.Serialization.Json", "0.3");
+2018-06-18 15:53:47 -  ("Main", "Angara.Statistics", "0.1.4"); ("Main", "Angara.Table", "0.3.3");
+2018-06-18 15:53:47 -  ("Main", "DotNetZip", "1.10.1"); ("Main", "FSharp.Core", "4.5");
+2018-06-18 15:53:47 -  ("Main", "FSharp.Data", "2.4.6"); ("Main", "MathNet.Numerics", "4.5.1");
+2018-06-18 15:53:47 -  ("Main", "MathNet.Numerics.FSharp", "4.5.1");
+2018-06-18 15:53:47 -  ("Main", "Newtonsoft.Json", "11.0.2"); ("Main", "Suave", "1.1.3");
+2018-06-18 15:53:47 -  ("Main", "System.Collections.Immutable", "1.1.36");
+2018-06-18 15:53:47 -  ("Main", "XPlot.Plotly", "1.4.5")]
+2018-06-18 15:53:48 - Expression evaluation failed: Could not find 'paket.dependencies'. To use Paket with this solution, please run 'paket init' first.
+2018-06-18 15:53:48 - If you have already run 'paket.init' then ensure that 'paket.dependencies' is located in the top level directory of your repository.
+2018-06-18 15:53:48 - Like this:
+2018-06-18 15:53:48 - MySourceDir
+2018-06-18 15:53:48 -   .paket
+2018-06-18 15:53:48 -   paket.dependencies
+2018-06-18 15:53:48 - ExceptionCould not find 'paket.dependencies'. To use Paket with this solution, please run 'paket init' first.
+2018-06-18 15:53:48 - If you have already run 'paket.init' then ensure that 'paket.dependencies' is located in the top level directory of your repository.
+2018-06-18 15:53:48 - Like this:
+2018-06-18 15:53:48 - MySourceDir
+2018-06-18 15:53:48 -   .paket
+2018-06-18 15:53:48 -   paket.dependencies
+2018-06-18 15:53:48 -   at <StartupCode$Paket-Core>.$PublicAPI+findInPath@54-10.Invoke (System.String message) [0x00001] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 15:53:48 -   at Microsoft.FSharp.Core.PrintfImpl+StringPrintfEnv`1[TResult].Finalize () [0x00012] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 15:53:48 -   at Microsoft.FSharp.Core.PrintfImpl+Final5@270D[TState,TResidue,TResult,A,B,C,D,E].Invoke (E e) [0x00104] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 15:53:48 -   at <StartupCode$Paket-Core>.$PublicAPI+findInPath@54-17.Invoke (System.String arg70) [0x00001] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 15:53:48 -   at Microsoft.FSharp.Core.FSharpFunc`2[T,TResult].InvokeFast[V] (Microsoft.FSharp.Core.FSharpFunc`2[T,TResult] func, T arg1, TResult arg2) [0x0001f] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 15:53:48 -   at <StartupCode$Paket-Core>.$PublicAPI.findInPath@45-9 (System.IO.DirectoryInfo dir, System.Boolean withError) [0x00077] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 15:53:48 -   at Paket.Dependencies.Locate (System.String path) [0x00007] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 15:53:48 -   at <StartupCode$FSI_0021>.$FSI_0021.main@ () [0x00001] in <ebd67ff5644843f1ae5c8538e69cd61a>:0 
+2018-06-18 15:53:48 -   at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+2018-06-18 15:53:48 -   at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in <77c9551943624fd18301ba6f78a841e5>:0 
+2018-06-18 15:53:48 - let dependencies2 = Dependencies.Locate(@"../IfSharp/bin/") // /home/nbuser/IfSharp/bin
+2018-06-18 15:53:48 - dependencies2.GetInstalledPackages()
+2018-06-18 15:53:48 - [("Main", "FSharp.Core", "4.2.3"); ("Main", "MathNet.Numerics", "4.5.1");
+2018-06-18 15:53:48 -  ("Main", "MathNet.Numerics.FSharp", "2.6"); ("Main", "Microsoft.ML", "0.2")]
+2018-06-18 15:53:49 - let dependencies3 = Dependencies.Locate(@"../IfSharp/") // /home/nbuser/IfSharp/
+2018-06-18 15:53:49 - dependencies2.GetInstalledPackages()
+2018-06-18 15:54:29 - open System
+2018-06-18 15:54:29 - open System.IO
+2018-06-18 15:54:30 - #load "Paket.fsx"
+2018-06-18 15:54:31 - Paket.Package
+2018-06-18 15:54:31 -   [ "MathNet.Numerics"
+2018-06-18 15:54:31 -     "MathNet.Numerics.FSharp"
+2018-06-18 15:54:31 -     "Microsoft.ML"
+2018-06-18 15:54:31 -   ]
+2018-06-18 15:54:54 - File.ReadAllText(@"../IfSharp/paket.dependencies")
+2018-06-18 15:55:20 - File.GetLastWriteTime(@"../IfSharp/paket.dependencies")
+2018-06-18 15:55:21 - File.ReadAllText(@"../IfSharp/bin/paket.dependencies")
+2018-06-18 15:55:21 - File.GetLastWriteTime(@"../IfSharp/bin/paket.dependencies")
+2018-06-18 15:55:38 - File.ReadAllText(@"../IfSharp/bin/paket.lock")
+2018-06-18 15:55:38 - File.GetLastWriteTime(@"../IfSharp/bin/paket.lock")
+2018-06-18 15:55:38 - open System
+2018-06-18 15:55:38 - open System.IO
+2018-06-18 15:55:38 - open Paket
+2018-06-18 15:55:38 - let dependencies = Dependencies.Locate(__SOURCE_DIRECTORY__) // /home/nbuser/library
+2018-06-18 15:55:38 - dependencies.GetInstalledPackages()
+2018-06-18 15:55:38 - [("Main", "Angara.Base", "0.3.2"); ("Main", "Angara.Chart", "0.3.1");
+2018-06-18 15:55:38 -  ("Main", "Angara.Chart.CSharp", "0.3.1"); ("Main", "Angara.Html", "0.3.2");
+2018-06-18 15:55:38 -  ("Main", "Angara.Reinstate", "0.3.2"); ("Main", "Angara.Serialization", "0.3");
+2018-06-18 15:55:38 -  ("Main", "Angara.Serialization.Json", "0.3");
+2018-06-18 15:55:38 -  ("Main", "Angara.Statistics", "0.1.4"); ("Main", "Angara.Table", "0.3.3");
+2018-06-18 15:55:38 -  ("Main", "DotNetZip", "1.10.1"); ("Main", "FSharp.Core", "4.5");
+2018-06-18 15:55:38 -  ("Main", "FSharp.Data", "2.4.6"); ("Main", "MathNet.Numerics", "4.5.1");
+2018-06-18 15:55:38 -  ("Main", "MathNet.Numerics.FSharp", "4.5.1");
+2018-06-18 15:55:38 -  ("Main", "Newtonsoft.Json", "11.0.2"); ("Main", "Suave", "1.1.3");
+2018-06-18 15:55:38 -  ("Main", "System.Collections.Immutable", "1.1.36");
+2018-06-18 15:55:38 -  ("Main", "XPlot.Plotly", "1.4.5")]
+2018-06-18 15:55:39 - Expression evaluation failed: Could not find 'paket.dependencies'. To use Paket with this solution, please run 'paket init' first.
+2018-06-18 15:55:39 - If you have already run 'paket.init' then ensure that 'paket.dependencies' is located in the top level directory of your repository.
+2018-06-18 15:55:39 - Like this:
+2018-06-18 15:55:39 - MySourceDir
+2018-06-18 15:55:39 -   .paket
+2018-06-18 15:55:39 -   paket.dependencies
+2018-06-18 15:55:39 - ExceptionCould not find 'paket.dependencies'. To use Paket with this solution, please run 'paket init' first.
+2018-06-18 15:55:39 - If you have already run 'paket.init' then ensure that 'paket.dependencies' is located in the top level directory of your repository.
+2018-06-18 15:55:39 - Like this:
+2018-06-18 15:55:39 - MySourceDir
+2018-06-18 15:55:39 -   .paket
+2018-06-18 15:55:39 -   paket.dependencies
+2018-06-18 15:55:39 -   at <StartupCode$Paket-Core>.$PublicAPI+findInPath@54-10.Invoke (System.String message) [0x00001] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 15:55:39 -   at Microsoft.FSharp.Core.PrintfImpl+StringPrintfEnv`1[TResult].Finalize () [0x00012] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 15:55:39 -   at Microsoft.FSharp.Core.PrintfImpl+Final5@270D[TState,TResidue,TResult,A,B,C,D,E].Invoke (E e) [0x00104] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 15:55:39 -   at <StartupCode$Paket-Core>.$PublicAPI+findInPath@54-17.Invoke (System.String arg70) [0x00001] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 15:55:39 -   at Microsoft.FSharp.Core.FSharpFunc`2[T,TResult].InvokeFast[V] (Microsoft.FSharp.Core.FSharpFunc`2[T,TResult] func, T arg1, TResult arg2) [0x0001f] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 15:55:39 -   at <StartupCode$Paket-Core>.$PublicAPI.findInPath@45-9 (System.IO.DirectoryInfo dir, System.Boolean withError) [0x00077] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 15:55:39 -   at Paket.Dependencies.Locate (System.String path) [0x00007] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 15:55:39 -   at <StartupCode$FSI_0043>.$FSI_0043.main@ () [0x00001] in <ebd67ff5644843f1ae5c8538e69cd61a>:0 
+2018-06-18 15:55:39 -   at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+2018-06-18 15:55:39 -   at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in <77c9551943624fd18301ba6f78a841e5>:0 
+2018-06-18 15:55:39 - let dependencies2 = Dependencies.Locate(@"../IfSharp/bin/") // /home/nbuser/IfSharp/bin
+2018-06-18 15:55:39 - dependencies2.GetInstalledPackages()
+2018-06-18 15:55:39 - [("Main", "FSharp.Core", "4.2.3"); ("Main", "MathNet.Numerics", "4.5.1");
+2018-06-18 15:55:39 -  ("Main", "MathNet.Numerics.FSharp", "2.6"); ("Main", "Microsoft.ML", "0.2")]
+2018-06-18 15:55:39 - let dependencies3 = Dependencies.Locate(@"../IfSharp/") // /home/nbuser/IfSharp/
+2018-06-18 15:55:39 - dependencies3.GetInstalledPackages()
+2018-06-18 15:55:39 - Expression evaluation failed: Error during parsing of /home/nbuser/IfSharp/paket.lock.
+2018-06-18 15:55:39 - Message: unknown lock file format RESTRICTION: >= net451
+2018-06-18 15:55:39 - ExceptionError during parsing of /home/nbuser/IfSharp/paket.lock.
+2018-06-18 15:55:39 - Message: unknown lock file format RESTRICTION: >= net451
+2018-06-18 15:55:39 -   at <StartupCode$Paket-Core>.$LockFile+Parse@696-26.Invoke (System.String message) [0x00001] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 15:55:39 -   at Microsoft.FSharp.Core.PrintfImpl+StringPrintfEnv`1[TResult].Finalize () [0x00012] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 15:55:39 -   at Microsoft.FSharp.Core.PrintfImpl+Final3@247[TState,TResidue,TResult,A,B,C].Invoke (Microsoft.FSharp.Core.FSharpFunc`2[T,TResult] env, A a, B b, C c) [0x0007d] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 15:55:39 -   at Microsoft.FSharp.Core.OptimizedClosures+Invoke@3301-2[T2,T3,T4,TResult,T1].Invoke (T2 u, T3 v, T4 w) [0x00001] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 15:55:39 -   at Microsoft.FSharp.Core.OptimizedClosures+Invoke@3266-1[T2,T3,TResult,T1].Invoke (T2 u, T3 v) [0x00001] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 15:55:39 -   at Microsoft.FSharp.Core.OptimizedClosures+Invoke@3253[T2,TResult,T1].Invoke (T2 u) [0x00001] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 15:55:39 -   at <StartupCode$Paket-Core>.$LockFile+Parse@696-29.Invoke (System.String arg30) [0x00001] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 15:55:39 -   at Microsoft.FSharp.Core.FSharpFunc`2[T,TResult].InvokeFast[V] (Microsoft.FSharp.Core.FSharpFunc`2[T,TResult] func, T arg1, TResult arg2) [0x0001f] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 15:55:39 -   at Microsoft.FSharp.Core.FSharpFunc`2[T,TResult].InvokeFast[V,W] (Microsoft.FSharp.Core.FSharpFunc`2[T,TResult] func, T arg1, TResult arg2, V arg3) [0x0003d] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 15:55:39 -   at Paket.LockFile.Parse (System.String lockFileName, System.String[] lines) [0x00054] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 15:55:39 -   at Paket.Dependencies.GetLockFile () [0x00036] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 15:55:39 -   at Paket.Dependencies.GetInstalledPackages () [0x00001] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 15:55:39 -   at <StartupCode$FSI_0046>.$FSI_0046.main@ () [0x00015] in <ebd67ff5644843f1ae5c8538e69cd61a>:0 
+2018-06-18 15:55:39 -   at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+2018-06-18 15:55:39 -   at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in <77c9551943624fd18301ba6f78a841e5>:0 
+2018-06-18 16:04:30 - Unknown content type on shell. msg_type is `comm_info_request`
+2018-06-18 18:17:56 - open System
+2018-06-18 18:17:56 - open System.IO
+2018-06-18 18:17:56 - open Paket
+2018-06-18 18:17:57 - let dependencies = Dependencies.Locate(__SOURCE_DIRECTORY__) // /home/nbuser/library
+2018-06-18 18:17:57 - dependencies.GetInstalledPackages()
+2018-06-18 18:17:57 - [("Main", "Angara.Base", "0.3.2"); ("Main", "Angara.Chart", "0.3.1");
+2018-06-18 18:17:57 -  ("Main", "Angara.Chart.CSharp", "0.3.1"); ("Main", "Angara.Html", "0.3.2");
+2018-06-18 18:17:57 -  ("Main", "Angara.Reinstate", "0.3.2"); ("Main", "Angara.Serialization", "0.3");
+2018-06-18 18:17:57 -  ("Main", "Angara.Serialization.Json", "0.3");
+2018-06-18 18:17:57 -  ("Main", "Angara.Statistics", "0.1.4"); ("Main", "Angara.Table", "0.3.3");
+2018-06-18 18:17:57 -  ("Main", "DotNetZip", "1.10.1"); ("Main", "FSharp.Core", "4.5");
+2018-06-18 18:17:57 -  ("Main", "FSharp.Data", "2.4.6"); ("Main", "MathNet.Numerics", "4.5.1");
+2018-06-18 18:17:57 -  ("Main", "MathNet.Numerics.FSharp", "4.5.1");
+2018-06-18 18:17:57 -  ("Main", "Newtonsoft.Json", "11.0.2"); ("Main", "Suave", "1.1.3");
+2018-06-18 18:17:57 -  ("Main", "System.Collections.Immutable", "1.1.36");
+2018-06-18 18:17:57 -  ("Main", "XPlot.Plotly", "1.4.5")]
+2018-06-18 18:17:58 - Expression evaluation failed: Could not find 'paket.dependencies'. To use Paket with this solution, please run 'paket init' first.
+2018-06-18 18:17:58 - If you have already run 'paket.init' then ensure that 'paket.dependencies' is located in the top level directory of your repository.
+2018-06-18 18:17:58 - Like this:
+2018-06-18 18:17:58 - MySourceDir
+2018-06-18 18:17:58 -   .paket
+2018-06-18 18:17:58 -   paket.dependencies
+2018-06-18 18:17:58 - ExceptionCould not find 'paket.dependencies'. To use Paket with this solution, please run 'paket init' first.
+2018-06-18 18:17:58 - If you have already run 'paket.init' then ensure that 'paket.dependencies' is located in the top level directory of your repository.
+2018-06-18 18:17:58 - Like this:
+2018-06-18 18:17:58 - MySourceDir
+2018-06-18 18:17:58 -   .paket
+2018-06-18 18:17:58 -   paket.dependencies
+2018-06-18 18:17:58 -   at <StartupCode$Paket-Core>.$PublicAPI+findInPath@54-10.Invoke (System.String message) [0x00001] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 18:17:58 -   at Microsoft.FSharp.Core.PrintfImpl+StringPrintfEnv`1[TResult].Finalize () [0x00012] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 18:17:58 -   at Microsoft.FSharp.Core.PrintfImpl+Final5@270D[TState,TResidue,TResult,A,B,C,D,E].Invoke (E e) [0x00104] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 18:17:58 -   at <StartupCode$Paket-Core>.$PublicAPI+findInPath@54-17.Invoke (System.String arg70) [0x00001] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 18:17:58 -   at Microsoft.FSharp.Core.FSharpFunc`2[T,TResult].InvokeFast[V] (Microsoft.FSharp.Core.FSharpFunc`2[T,TResult] func, T arg1, TResult arg2) [0x0001f] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 18:17:58 -   at <StartupCode$Paket-Core>.$PublicAPI.findInPath@45-9 (System.IO.DirectoryInfo dir, System.Boolean withError) [0x00077] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 18:17:58 -   at Paket.Dependencies.Locate (System.String path) [0x00007] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 18:17:58 -   at <StartupCode$FSI_0048>.$FSI_0048.main@ () [0x00001] in <ebd67ff5644843f1ae5c8538e69cd61a>:0 
+2018-06-18 18:17:58 -   at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+2018-06-18 18:17:58 -   at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in <77c9551943624fd18301ba6f78a841e5>:0 
+2018-06-18 18:18:10 - open System
+2018-06-18 18:18:10 - open System.IO
+2018-06-18 18:18:11 - #load "Paket.fsx"
+2018-06-18 18:18:12 - Paket.Package
+2018-06-18 18:18:12 -   [ "MathNet.Numerics"
+2018-06-18 18:18:12 -     "MathNet.Numerics.FSharp"
+2018-06-18 18:18:12 -     "Microsoft.ML"
+2018-06-18 18:18:12 -   ]
+2018-06-18 18:18:15 - File.ReadAllText(@"../IfSharp/paket.dependencies")
+2018-06-18 18:18:41 - File.GetLastWriteTime(@"../IfSharp/paket.dependencies")
+2018-06-18 18:18:41 - File.ReadAllText(@"../IfSharp/bin/paket.dependencies")
+2018-06-18 18:19:08 - File.GetLastWriteTime(@"../IfSharp/bin/paket.dependencies")
+2018-06-18 18:19:09 - File.ReadAllText(@"../IfSharp/bin/paket.lock")
+2018-06-18 18:19:09 - File.GetLastWriteTime(@"../IfSharp/bin/paket.lock")
+2018-06-18 18:19:10 - open System
+2018-06-18 18:19:10 - open System.IO
+2018-06-18 18:19:10 - open Paket
+2018-06-18 18:19:10 - let dependencies = Dependencies.Locate(__SOURCE_DIRECTORY__) // /home/nbuser/library
+2018-06-18 18:19:10 - dependencies.GetInstalledPackages()
+2018-06-18 18:19:10 - [("Main", "Angara.Base", "0.3.2"); ("Main", "Angara.Chart", "0.3.1");
+2018-06-18 18:19:10 -  ("Main", "Angara.Chart.CSharp", "0.3.1"); ("Main", "Angara.Html", "0.3.2");
+2018-06-18 18:19:10 -  ("Main", "Angara.Reinstate", "0.3.2"); ("Main", "Angara.Serialization", "0.3");
+2018-06-18 18:19:10 -  ("Main", "Angara.Serialization.Json", "0.3");
+2018-06-18 18:19:10 -  ("Main", "Angara.Statistics", "0.1.4"); ("Main", "Angara.Table", "0.3.3");
+2018-06-18 18:19:10 -  ("Main", "DotNetZip", "1.10.1"); ("Main", "FSharp.Core", "4.5");
+2018-06-18 18:19:10 -  ("Main", "FSharp.Data", "2.4.6"); ("Main", "MathNet.Numerics", "4.5.1");
+2018-06-18 18:19:10 -  ("Main", "MathNet.Numerics.FSharp", "4.5.1");
+2018-06-18 18:19:10 -  ("Main", "Newtonsoft.Json", "11.0.2"); ("Main", "Suave", "1.1.3");
+2018-06-18 18:19:10 -  ("Main", "System.Collections.Immutable", "1.1.36");
+2018-06-18 18:19:10 -  ("Main", "XPlot.Plotly", "1.4.5")]
+2018-06-18 18:19:10 - Expression evaluation failed: Could not find 'paket.dependencies'. To use Paket with this solution, please run 'paket init' first.
+2018-06-18 18:19:10 - If you have already run 'paket.init' then ensure that 'paket.dependencies' is located in the top level directory of your repository.
+2018-06-18 18:19:10 - Like this:
+2018-06-18 18:19:10 - MySourceDir
+2018-06-18 18:19:10 -   .paket
+2018-06-18 18:19:10 -   paket.dependencies
+2018-06-18 18:19:10 - ExceptionCould not find 'paket.dependencies'. To use Paket with this solution, please run 'paket init' first.
+2018-06-18 18:19:10 - If you have already run 'paket.init' then ensure that 'paket.dependencies' is located in the top level directory of your repository.
+2018-06-18 18:19:10 - Like this:
+2018-06-18 18:19:10 - MySourceDir
+2018-06-18 18:19:10 -   .paket
+2018-06-18 18:19:10 -   paket.dependencies
+2018-06-18 18:19:10 -   at <StartupCode$Paket-Core>.$PublicAPI+findInPath@54-10.Invoke (System.String message) [0x00001] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 18:19:10 -   at Microsoft.FSharp.Core.PrintfImpl+StringPrintfEnv`1[TResult].Finalize () [0x00012] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 18:19:10 -   at Microsoft.FSharp.Core.PrintfImpl+Final5@270D[TState,TResidue,TResult,A,B,C,D,E].Invoke (E e) [0x00104] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 18:19:10 -   at <StartupCode$Paket-Core>.$PublicAPI+findInPath@54-17.Invoke (System.String arg70) [0x00001] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 18:19:10 -   at Microsoft.FSharp.Core.FSharpFunc`2[T,TResult].InvokeFast[V] (Microsoft.FSharp.Core.FSharpFunc`2[T,TResult] func, T arg1, TResult arg2) [0x0001f] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 18:19:10 -   at <StartupCode$Paket-Core>.$PublicAPI.findInPath@45-9 (System.IO.DirectoryInfo dir, System.Boolean withError) [0x00077] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 18:19:10 -   at Paket.Dependencies.Locate (System.String path) [0x00007] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 18:19:10 -   at <StartupCode$FSI_0066>.$FSI_0066.main@ () [0x00001] in <ebd67ff5644843f1ae5c8538e69cd61a>:0 
+2018-06-18 18:19:10 -   at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+2018-06-18 18:19:10 -   at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in <77c9551943624fd18301ba6f78a841e5>:0 
+2018-06-18 18:19:11 - let dependencies2 = Dependencies.Locate(@"../IfSharp/bin/") // /home/nbuser/IfSharp/bin
+2018-06-18 18:19:11 - dependencies2.GetInstalledPackages()
+2018-06-18 18:19:11 - [("Main", "FSharp.Core", "4.2.3"); ("Main", "MathNet.Numerics", "4.5.1");
+2018-06-18 18:19:11 -  ("Main", "MathNet.Numerics.FSharp", "2.6"); ("Main", "Microsoft.ML", "0.2")]
+2018-06-18 18:19:11 - let dependencies3 = Dependencies.Locate(@"../IfSharp/") // /home/nbuser/IfSharp/
+2018-06-18 18:19:11 - dependencies3.GetInstalledPackages()
+2018-06-18 18:19:11 - Expression evaluation failed: Error during parsing of /home/nbuser/IfSharp/paket.lock.
+2018-06-18 18:19:11 - Message: unknown lock file format RESTRICTION: >= net451
+2018-06-18 18:19:11 - ExceptionError during parsing of /home/nbuser/IfSharp/paket.lock.
+2018-06-18 18:19:11 - Message: unknown lock file format RESTRICTION: >= net451
+2018-06-18 18:19:11 -   at <StartupCode$Paket-Core>.$LockFile+Parse@696-26.Invoke (System.String message) [0x00001] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 18:19:11 -   at Microsoft.FSharp.Core.PrintfImpl+StringPrintfEnv`1[TResult].Finalize () [0x00012] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 18:19:11 -   at Microsoft.FSharp.Core.PrintfImpl+Final3@247[TState,TResidue,TResult,A,B,C].Invoke (Microsoft.FSharp.Core.FSharpFunc`2[T,TResult] env, A a, B b, C c) [0x0007d] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 18:19:11 -   at Microsoft.FSharp.Core.OptimizedClosures+Invoke@3301-2[T2,T3,T4,TResult,T1].Invoke (T2 u, T3 v, T4 w) [0x00001] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 18:19:11 -   at Microsoft.FSharp.Core.OptimizedClosures+Invoke@3266-1[T2,T3,TResult,T1].Invoke (T2 u, T3 v) [0x00001] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 18:19:11 -   at Microsoft.FSharp.Core.OptimizedClosures+Invoke@3253[T2,TResult,T1].Invoke (T2 u) [0x00001] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 18:19:11 -   at <StartupCode$Paket-Core>.$LockFile+Parse@696-29.Invoke (System.String arg30) [0x00001] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 18:19:11 -   at Microsoft.FSharp.Core.FSharpFunc`2[T,TResult].InvokeFast[V] (Microsoft.FSharp.Core.FSharpFunc`2[T,TResult] func, T arg1, TResult arg2) [0x0001f] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 18:19:11 -   at Microsoft.FSharp.Core.FSharpFunc`2[T,TResult].InvokeFast[V,W] (Microsoft.FSharp.Core.FSharpFunc`2[T,TResult] func, T arg1, TResult arg2, V arg3) [0x0003d] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 18:19:11 -   at Paket.LockFile.Parse (System.String lockFileName, System.String[] lines) [0x00054] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 18:19:11 -   at Paket.Dependencies.GetLockFile () [0x00036] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 18:19:11 -   at Paket.Dependencies.GetInstalledPackages () [0x00001] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 18:19:11 -   at <StartupCode$FSI_0069>.$FSI_0069.main@ () [0x00015] in <ebd67ff5644843f1ae5c8538e69cd61a>:0 
+2018-06-18 18:19:11 -   at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+2018-06-18 18:19:11 -   at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in <77c9551943624fd18301ba6f78a841e5>:0 
+2018-06-18 18:58:13 - let dependencies = Dependencies.Locate(__SOURCE_DIRECTORY__) // /home/nbuser/library
+2018-06-18 18:58:13 - dependencies.GetInstalledPackages()
+2018-06-18 18:58:13 - Expression evaluation failed: Could not find 'paket.dependencies'. To use Paket with this solution, please run 'paket init' first.
+2018-06-18 18:58:13 - If you have already run 'paket.init' then ensure that 'paket.dependencies' is located in the top level directory of your repository.
+2018-06-18 18:58:13 - Like this:
+2018-06-18 18:58:13 - MySourceDir
+2018-06-18 18:58:13 -   .paket
+2018-06-18 18:58:13 -   paket.dependencies
+2018-06-18 18:58:13 - ExceptionCould not find 'paket.dependencies'. To use Paket with this solution, please run 'paket init' first.
+2018-06-18 18:58:13 - If you have already run 'paket.init' then ensure that 'paket.dependencies' is located in the top level directory of your repository.
+2018-06-18 18:58:13 - Like this:
+2018-06-18 18:58:13 - MySourceDir
+2018-06-18 18:58:13 -   .paket
+2018-06-18 18:58:13 -   paket.dependencies
+2018-06-18 18:58:13 -   at <StartupCode$Paket-Core>.$PublicAPI+findInPath@54-10.Invoke (System.String message) [0x00001] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 18:58:13 -   at Microsoft.FSharp.Core.PrintfImpl+StringPrintfEnv`1[TResult].Finalize () [0x00012] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 18:58:13 -   at Microsoft.FSharp.Core.PrintfImpl+Final5@270D[TState,TResidue,TResult,A,B,C,D,E].Invoke (E e) [0x00104] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 18:58:13 -   at <StartupCode$Paket-Core>.$PublicAPI+findInPath@54-17.Invoke (System.String arg70) [0x00001] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 18:58:13 -   at Microsoft.FSharp.Core.FSharpFunc`2[T,TResult].InvokeFast[V] (Microsoft.FSharp.Core.FSharpFunc`2[T,TResult] func, T arg1, TResult arg2) [0x0001f] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 18:58:13 -   at <StartupCode$Paket-Core>.$PublicAPI.findInPath@45-9 (System.IO.DirectoryInfo dir, System.Boolean withError) [0x00077] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 18:58:13 -   at Paket.Dependencies.Locate (System.String path) [0x00007] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 18:58:13 -   at <StartupCode$FSI_0070>.$FSI_0070.main@ () [0x00001] in <ebd67ff5644843f1ae5c8538e69cd61a>:0 
+2018-06-18 18:58:13 -   at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+2018-06-18 18:58:13 -   at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in <77c9551943624fd18301ba6f78a841e5>:0 
+2018-06-18 18:58:13 - let dependencies2 = Dependencies.Locate(@"../IfSharp/bin/") // /home/nbuser/IfSharp/bin
+2018-06-18 18:58:13 - dependencies2.GetInstalledPackages()
+2018-06-18 18:58:28 - open System
+2018-06-18 18:58:28 - open System.IO
+2018-06-18 18:58:28 - #load "Paket.fsx"
+2018-06-18 18:58:29 - Paket.Package
+2018-06-18 18:58:29 -   [ "MathNet.Numerics"
+2018-06-18 18:58:29 -     "MathNet.Numerics.FSharp"
+2018-06-18 18:58:29 -     "Microsoft.ML"
+2018-06-18 18:58:29 -   ]
+2018-06-18 18:58:30 - File.ReadAllText(@"../IfSharp/paket.dependencies")
+2018-06-18 18:58:31 - File.GetLastWriteTime(@"../IfSharp/paket.dependencies")
+2018-06-18 18:58:41 - File.ReadAllText(@"../IfSharp/bin/paket.dependencies")
+2018-06-18 18:58:41 - File.GetLastWriteTime(@"../IfSharp/bin/paket.dependencies")
+2018-06-18 18:58:55 - File.ReadAllText(@"../IfSharp/bin/paket.lock")
+2018-06-18 18:58:57 - File.GetLastWriteTime(@"../IfSharp/bin/paket.lock")
+2018-06-18 18:58:58 - open System
+2018-06-18 18:58:58 - open System.IO
+2018-06-18 18:58:58 - open Paket
+2018-06-18 18:58:58 - let dependencies = Dependencies.Locate(__SOURCE_DIRECTORY__) // /home/nbuser/library
+2018-06-18 18:58:58 - dependencies.GetInstalledPackages()
+2018-06-18 18:58:58 - Expression evaluation failed: Could not find 'paket.dependencies'. To use Paket with this solution, please run 'paket init' first.
+2018-06-18 18:58:58 - If you have already run 'paket.init' then ensure that 'paket.dependencies' is located in the top level directory of your repository.
+2018-06-18 18:58:58 - Like this:
+2018-06-18 18:58:58 - MySourceDir
+2018-06-18 18:58:58 -   .paket
+2018-06-18 18:58:58 -   paket.dependencies
+2018-06-18 18:58:58 - ExceptionCould not find 'paket.dependencies'. To use Paket with this solution, please run 'paket init' first.
+2018-06-18 18:58:58 - If you have already run 'paket.init' then ensure that 'paket.dependencies' is located in the top level directory of your repository.
+2018-06-18 18:58:58 - Like this:
+2018-06-18 18:58:58 - MySourceDir
+2018-06-18 18:58:58 -   .paket
+2018-06-18 18:58:58 -   paket.dependencies
+2018-06-18 18:58:58 -   at <StartupCode$Paket-Core>.$PublicAPI+findInPath@54-10.Invoke (System.String message) [0x00001] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 18:58:58 -   at Microsoft.FSharp.Core.PrintfImpl+StringPrintfEnv`1[TResult].Finalize () [0x00012] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 18:58:58 -   at Microsoft.FSharp.Core.PrintfImpl+Final5@270D[TState,TResidue,TResult,A,B,C,D,E].Invoke (E e) [0x00104] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 18:58:58 -   at <StartupCode$Paket-Core>.$PublicAPI+findInPath@54-17.Invoke (System.String arg70) [0x00001] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 18:58:58 -   at Microsoft.FSharp.Core.FSharpFunc`2[T,TResult].InvokeFast[V] (Microsoft.FSharp.Core.FSharpFunc`2[T,TResult] func, T arg1, TResult arg2) [0x0001f] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 18:58:58 -   at <StartupCode$Paket-Core>.$PublicAPI.findInPath@45-9 (System.IO.DirectoryInfo dir, System.Boolean withError) [0x00077] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 18:58:58 -   at Paket.Dependencies.Locate (System.String path) [0x00007] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 18:58:58 -   at <StartupCode$FSI_0090>.$FSI_0090.main@ () [0x00001] in <ebd67ff5644843f1ae5c8538e69cd61a>:0 
+2018-06-18 18:58:58 -   at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+2018-06-18 18:58:58 -   at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in <77c9551943624fd18301ba6f78a841e5>:0 
+2018-06-18 18:58:58 - let dependencies2 = Dependencies.Locate(@"../IfSharp/bin/") // /home/nbuser/IfSharp/bin
+2018-06-18 18:58:58 - dependencies2.GetInstalledPackages()
+2018-06-18 18:58:58 - let dependencies3 = Dependencies.Locate(@"../IfSharp/") // /home/nbuser/IfSharp/
+2018-06-18 18:58:58 - dependencies3.GetInstalledPackages()
+2018-06-18 18:58:59 - Expression evaluation failed: Error during parsing of /home/nbuser/IfSharp/paket.lock.
+2018-06-18 18:58:59 - Message: unknown lock file format RESTRICTION: >= net451
+2018-06-18 18:58:59 - ExceptionError during parsing of /home/nbuser/IfSharp/paket.lock.
+2018-06-18 18:58:59 - Message: unknown lock file format RESTRICTION: >= net451
+2018-06-18 18:58:59 -   at <StartupCode$Paket-Core>.$LockFile+Parse@696-26.Invoke (System.String message) [0x00001] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 18:58:59 -   at Microsoft.FSharp.Core.PrintfImpl+StringPrintfEnv`1[TResult].Finalize () [0x00012] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 18:58:59 -   at Microsoft.FSharp.Core.PrintfImpl+Final3@247[TState,TResidue,TResult,A,B,C].Invoke (Microsoft.FSharp.Core.FSharpFunc`2[T,TResult] env, A a, B b, C c) [0x0007d] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 18:58:59 -   at Microsoft.FSharp.Core.OptimizedClosures+Invoke@3301-2[T2,T3,T4,TResult,T1].Invoke (T2 u, T3 v, T4 w) [0x00001] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 18:58:59 -   at Microsoft.FSharp.Core.OptimizedClosures+Invoke@3266-1[T2,T3,TResult,T1].Invoke (T2 u, T3 v) [0x00001] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 18:58:59 -   at Microsoft.FSharp.Core.OptimizedClosures+Invoke@3253[T2,TResult,T1].Invoke (T2 u) [0x00001] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 18:58:59 -   at <StartupCode$Paket-Core>.$LockFile+Parse@696-29.Invoke (System.String arg30) [0x00001] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 18:58:59 -   at Microsoft.FSharp.Core.FSharpFunc`2[T,TResult].InvokeFast[V] (Microsoft.FSharp.Core.FSharpFunc`2[T,TResult] func, T arg1, TResult arg2) [0x0001f] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 18:58:59 -   at Microsoft.FSharp.Core.FSharpFunc`2[T,TResult].InvokeFast[V,W] (Microsoft.FSharp.Core.FSharpFunc`2[T,TResult] func, T arg1, TResult arg2, V arg3) [0x0003d] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 18:58:59 -   at Paket.LockFile.Parse (System.String lockFileName, System.String[] lines) [0x00054] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 18:58:59 -   at Paket.Dependencies.GetLockFile () [0x00036] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 18:58:59 -   at Paket.Dependencies.GetInstalledPackages () [0x00001] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 18:58:59 -   at <StartupCode$FSI_0093>.$FSI_0093.main@ () [0x00015] in <ebd67ff5644843f1ae5c8538e69cd61a>:0 
+2018-06-18 18:58:59 -   at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+2018-06-18 18:58:59 -   at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in <77c9551943624fd18301ba6f78a841e5>:0 
+2018-06-18 18:59:20 - #load "Paket.Generated.Refs.fsx"
+2018-06-18 18:59:25 - open System
+2018-06-18 18:59:25 - open System.IO
+2018-06-18 18:59:25 - open Paket
+2018-06-18 18:59:25 - let dependencies = Dependencies.Locate(__SOURCE_DIRECTORY__) // /home/nbuser/library
+2018-06-18 18:59:25 - dependencies.GetInstalledPackages()
+2018-06-18 18:59:26 - Expression evaluation failed: Could not find 'paket.dependencies'. To use Paket with this solution, please run 'paket init' first.
+2018-06-18 18:59:26 - If you have already run 'paket.init' then ensure that 'paket.dependencies' is located in the top level directory of your repository.
+2018-06-18 18:59:26 - Like this:
+2018-06-18 18:59:26 - MySourceDir
+2018-06-18 18:59:26 -   .paket
+2018-06-18 18:59:26 -   paket.dependencies
+2018-06-18 18:59:26 - ExceptionCould not find 'paket.dependencies'. To use Paket with this solution, please run 'paket init' first.
+2018-06-18 18:59:26 - If you have already run 'paket.init' then ensure that 'paket.dependencies' is located in the top level directory of your repository.
+2018-06-18 18:59:26 - Like this:
+2018-06-18 18:59:26 - MySourceDir
+2018-06-18 18:59:26 -   .paket
+2018-06-18 18:59:26 -   paket.dependencies
+2018-06-18 18:59:26 -   at <StartupCode$Paket-Core>.$PublicAPI+findInPath@54-10.Invoke (System.String message) [0x00001] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 18:59:26 -   at Microsoft.FSharp.Core.PrintfImpl+StringPrintfEnv`1[TResult].Finalize () [0x00012] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 18:59:26 -   at Microsoft.FSharp.Core.PrintfImpl+Final5@270D[TState,TResidue,TResult,A,B,C,D,E].Invoke (E e) [0x00104] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 18:59:26 -   at <StartupCode$Paket-Core>.$PublicAPI+findInPath@54-17.Invoke (System.String arg70) [0x00001] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 18:59:26 -   at Microsoft.FSharp.Core.FSharpFunc`2[T,TResult].InvokeFast[V] (Microsoft.FSharp.Core.FSharpFunc`2[T,TResult] func, T arg1, TResult arg2) [0x0001f] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 18:59:26 -   at <StartupCode$Paket-Core>.$PublicAPI.findInPath@45-9 (System.IO.DirectoryInfo dir, System.Boolean withError) [0x00077] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 18:59:26 -   at Paket.Dependencies.Locate (System.String path) [0x00007] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 18:59:26 -   at <StartupCode$FSI_0096>.$FSI_0096.main@ () [0x00001] in <ebd67ff5644843f1ae5c8538e69cd61a>:0 
+2018-06-18 18:59:26 -   at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+2018-06-18 18:59:26 -   at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in <77c9551943624fd18301ba6f78a841e5>:0 
+2018-06-18 18:59:26 - let dependencies2 = Dependencies.Locate(@"../IfSharp/bin/") // /home/nbuser/IfSharp/bin
+2018-06-18 18:59:26 - dependencies2.GetInstalledPackages()
+2018-06-18 18:59:39 - let dependencies = Dependencies.Locate(__SOURCE_DIRECTORY__) // /home/nbuser/library
+2018-06-18 18:59:39 - dependencies.GetInstalledPackages()
+2018-06-18 18:59:39 - Expression evaluation failed: Could not find 'paket.dependencies'. To use Paket with this solution, please run 'paket init' first.
+2018-06-18 18:59:39 - If you have already run 'paket.init' then ensure that 'paket.dependencies' is located in the top level directory of your repository.
+2018-06-18 18:59:39 - Like this:
+2018-06-18 18:59:39 - MySourceDir
+2018-06-18 18:59:39 -   .paket
+2018-06-18 18:59:39 -   paket.dependencies
+2018-06-18 18:59:39 - ExceptionCould not find 'paket.dependencies'. To use Paket with this solution, please run 'paket init' first.
+2018-06-18 18:59:39 - If you have already run 'paket.init' then ensure that 'paket.dependencies' is located in the top level directory of your repository.
+2018-06-18 18:59:39 - Like this:
+2018-06-18 18:59:39 - MySourceDir
+2018-06-18 18:59:39 -   .paket
+2018-06-18 18:59:39 -   paket.dependencies
+2018-06-18 18:59:39 -   at <StartupCode$Paket-Core>.$PublicAPI+findInPath@54-10.Invoke (System.String message) [0x00001] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 18:59:39 -   at Microsoft.FSharp.Core.PrintfImpl+StringPrintfEnv`1[TResult].Finalize () [0x00012] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 18:59:39 -   at Microsoft.FSharp.Core.PrintfImpl+Final5@270D[TState,TResidue,TResult,A,B,C,D,E].Invoke (E e) [0x00104] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 18:59:39 -   at <StartupCode$Paket-Core>.$PublicAPI+findInPath@54-17.Invoke (System.String arg70) [0x00001] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 18:59:39 -   at Microsoft.FSharp.Core.FSharpFunc`2[T,TResult].InvokeFast[V] (Microsoft.FSharp.Core.FSharpFunc`2[T,TResult] func, T arg1, TResult arg2) [0x0001f] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 18:59:39 -   at <StartupCode$Paket-Core>.$PublicAPI.findInPath@45-9 (System.IO.DirectoryInfo dir, System.Boolean withError) [0x00077] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 18:59:39 -   at Paket.Dependencies.Locate (System.String path) [0x00007] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 18:59:39 -   at <StartupCode$FSI_0099>.$FSI_0099.main@ () [0x00001] in <ebd67ff5644843f1ae5c8538e69cd61a>:0 
+2018-06-18 18:59:39 -   at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+2018-06-18 18:59:39 -   at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in <77c9551943624fd18301ba6f78a841e5>:0 
+2018-06-18 18:59:41 - let dependencies3 = Dependencies.Locate(@"../IfSharp/") // /home/nbuser/IfSharp/
+2018-06-18 18:59:41 - dependencies3.GetInstalledPackages()
+2018-06-18 18:59:41 - Expression evaluation failed: Error during parsing of /home/nbuser/IfSharp/paket.lock.
+2018-06-18 18:59:41 - Message: unknown lock file format RESTRICTION: >= net451
+2018-06-18 18:59:41 - ExceptionError during parsing of /home/nbuser/IfSharp/paket.lock.
+2018-06-18 18:59:41 - Message: unknown lock file format RESTRICTION: >= net451
+2018-06-18 18:59:41 -   at <StartupCode$Paket-Core>.$LockFile+Parse@696-26.Invoke (System.String message) [0x00001] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 18:59:41 -   at Microsoft.FSharp.Core.PrintfImpl+StringPrintfEnv`1[TResult].Finalize () [0x00012] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 18:59:41 -   at Microsoft.FSharp.Core.PrintfImpl+Final3@247[TState,TResidue,TResult,A,B,C].Invoke (Microsoft.FSharp.Core.FSharpFunc`2[T,TResult] env, A a, B b, C c) [0x0007d] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 18:59:41 -   at Microsoft.FSharp.Core.OptimizedClosures+Invoke@3301-2[T2,T3,T4,TResult,T1].Invoke (T2 u, T3 v, T4 w) [0x00001] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 18:59:41 -   at Microsoft.FSharp.Core.OptimizedClosures+Invoke@3266-1[T2,T3,TResult,T1].Invoke (T2 u, T3 v) [0x00001] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 18:59:41 -   at Microsoft.FSharp.Core.OptimizedClosures+Invoke@3253[T2,TResult,T1].Invoke (T2 u) [0x00001] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 18:59:41 -   at <StartupCode$Paket-Core>.$LockFile+Parse@696-29.Invoke (System.String arg30) [0x00001] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 18:59:41 -   at Microsoft.FSharp.Core.FSharpFunc`2[T,TResult].InvokeFast[V] (Microsoft.FSharp.Core.FSharpFunc`2[T,TResult] func, T arg1, TResult arg2) [0x0001f] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 18:59:41 -   at Microsoft.FSharp.Core.FSharpFunc`2[T,TResult].InvokeFast[V,W] (Microsoft.FSharp.Core.FSharpFunc`2[T,TResult] func, T arg1, TResult arg2, V arg3) [0x0003d] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 18:59:41 -   at Paket.LockFile.Parse (System.String lockFileName, System.String[] lines) [0x00054] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 18:59:41 -   at Paket.Dependencies.GetLockFile () [0x00036] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 18:59:41 -   at Paket.Dependencies.GetInstalledPackages () [0x00001] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 18:59:41 -   at <StartupCode$FSI_0100>.$FSI_0100.main@ () [0x00015] in <ebd67ff5644843f1ae5c8538e69cd61a>:0 
+2018-06-18 18:59:41 -   at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+2018-06-18 18:59:41 -   at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in <77c9551943624fd18301ba6f78a841e5>:0 
+2018-06-18 19:00:16 - open System
+2018-06-18 19:00:16 - open System.IO
+2018-06-18 19:00:17 - #load "Paket.fsx"
+2018-06-18 19:00:17 - Paket.Package
+2018-06-18 19:00:17 -   [ "MathNet.Numerics"
+2018-06-18 19:00:17 -     "MathNet.Numerics.FSharp"
+2018-06-18 19:00:17 -     "Microsoft.ML"
+2018-06-18 19:00:17 -   ]
+2018-06-18 19:00:19 - #load "Paket.Generated.Refs.fsx"
+2018-06-18 19:00:21 - File.ReadAllText(@"../IfSharp/paket.dependencies")
+2018-06-18 19:00:45 - File.GetLastWriteTime(@"../IfSharp/paket.dependencies")
+2018-06-18 19:01:52 - File.ReadAllText(@"../IfSharp/bin/paket.dependencies")
+2018-06-18 19:01:52 - File.GetLastWriteTime(@"../IfSharp/bin/paket.dependencies")
+2018-06-18 19:02:13 - File.ReadAllText(@"../IfSharp/bin/paket.lock")
+2018-06-18 19:02:15 - File.GetLastWriteTime(@"../IfSharp/bin/paket.lock")
+2018-06-18 19:18:30 - let dependencies = Dependencies.Locate(__SOURCE_DIRECTORY__) // /home/nbuser/library
+2018-06-18 19:18:30 - dependencies.GetInstalledPackages()
+2018-06-18 19:18:30 - Expression evaluation failed: Could not find 'paket.dependencies'. To use Paket with this solution, please run 'paket init' first.
+2018-06-18 19:18:30 - If you have already run 'paket.init' then ensure that 'paket.dependencies' is located in the top level directory of your repository.
+2018-06-18 19:18:30 - Like this:
+2018-06-18 19:18:30 - MySourceDir
+2018-06-18 19:18:30 -   .paket
+2018-06-18 19:18:30 -   paket.dependencies
+2018-06-18 19:18:30 - ExceptionCould not find 'paket.dependencies'. To use Paket with this solution, please run 'paket init' first.
+2018-06-18 19:18:30 - If you have already run 'paket.init' then ensure that 'paket.dependencies' is located in the top level directory of your repository.
+2018-06-18 19:18:30 - Like this:
+2018-06-18 19:18:30 - MySourceDir
+2018-06-18 19:18:30 -   .paket
+2018-06-18 19:18:30 -   paket.dependencies
+2018-06-18 19:18:30 -   at <StartupCode$Paket-Core>.$PublicAPI+findInPath@54-10.Invoke (System.String message) [0x00001] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 19:18:30 -   at Microsoft.FSharp.Core.PrintfImpl+StringPrintfEnv`1[TResult].Finalize () [0x00012] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 19:18:30 -   at Microsoft.FSharp.Core.PrintfImpl+Final5@270D[TState,TResidue,TResult,A,B,C,D,E].Invoke (E e) [0x00104] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 19:18:30 -   at <StartupCode$Paket-Core>.$PublicAPI+findInPath@54-17.Invoke (System.String arg70) [0x00001] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 19:18:30 -   at Microsoft.FSharp.Core.FSharpFunc`2[T,TResult].InvokeFast[V] (Microsoft.FSharp.Core.FSharpFunc`2[T,TResult] func, T arg1, TResult arg2) [0x0001f] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 19:18:30 -   at <StartupCode$Paket-Core>.$PublicAPI.findInPath@45-9 (System.IO.DirectoryInfo dir, System.Boolean withError) [0x00077] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 19:18:30 -   at Paket.Dependencies.Locate (System.String path) [0x00007] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 19:18:30 -   at <StartupCode$FSI_0118>.$FSI_0118.main@ () [0x00001] in <ebd67ff5644843f1ae5c8538e69cd61a>:0 
+2018-06-18 19:18:30 -   at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+2018-06-18 19:18:30 -   at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in <77c9551943624fd18301ba6f78a841e5>:0 
+2018-06-18 19:19:16 - let dependencies = Dependencies.Locate(__SOURCE_DIRECTORY__) // /home/nbuser/library
+2018-06-18 19:19:16 - Expression evaluation failed: Could not find 'paket.dependencies'. To use Paket with this solution, please run 'paket init' first.
+2018-06-18 19:19:16 - If you have already run 'paket.init' then ensure that 'paket.dependencies' is located in the top level directory of your repository.
+2018-06-18 19:19:16 - Like this:
+2018-06-18 19:19:16 - MySourceDir
+2018-06-18 19:19:16 -   .paket
+2018-06-18 19:19:16 -   paket.dependencies
+2018-06-18 19:19:16 - ExceptionCould not find 'paket.dependencies'. To use Paket with this solution, please run 'paket init' first.
+2018-06-18 19:19:16 - If you have already run 'paket.init' then ensure that 'paket.dependencies' is located in the top level directory of your repository.
+2018-06-18 19:19:16 - Like this:
+2018-06-18 19:19:16 - MySourceDir
+2018-06-18 19:19:16 -   .paket
+2018-06-18 19:19:16 -   paket.dependencies
+2018-06-18 19:19:16 -   at <StartupCode$Paket-Core>.$PublicAPI+findInPath@54-10.Invoke (System.String message) [0x00001] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 19:19:16 -   at Microsoft.FSharp.Core.PrintfImpl+StringPrintfEnv`1[TResult].Finalize () [0x00012] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 19:19:16 -   at Microsoft.FSharp.Core.PrintfImpl+Final5@270D[TState,TResidue,TResult,A,B,C,D,E].Invoke (E e) [0x00104] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 19:19:16 -   at <StartupCode$Paket-Core>.$PublicAPI+findInPath@54-17.Invoke (System.String arg70) [0x00001] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 19:19:16 -   at Microsoft.FSharp.Core.FSharpFunc`2[T,TResult].InvokeFast[V] (Microsoft.FSharp.Core.FSharpFunc`2[T,TResult] func, T arg1, TResult arg2) [0x0001f] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 19:19:16 -   at <StartupCode$Paket-Core>.$PublicAPI.findInPath@45-9 (System.IO.DirectoryInfo dir, System.Boolean withError) [0x00077] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 19:19:16 -   at Paket.Dependencies.Locate (System.String path) [0x00007] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 19:19:16 -   at <StartupCode$FSI_0119>.$FSI_0119.main@ () [0x00001] in <ebd67ff5644843f1ae5c8538e69cd61a>:0 
+2018-06-18 19:19:16 -   at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+2018-06-18 19:19:16 -   at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in <77c9551943624fd18301ba6f78a841e5>:0 
+2018-06-18 19:19:17 - dependencies.GetInstalledPackages()
+2018-06-18 19:19:17 - The value, namespace, type or module 'dependencies' is not defined. Maybe you want one of the following:
+2018-06-18 19:19:17 -    Dependencies
+2018-06-18 19:19:17 -    dependencies2
+2018-06-18 19:19:17 -    dependencies3
+2018-06-18 19:19:17 -    DependenciesFile
+2018-06-18 19:19:17 -    DependenciesGroup
+2018-06-18 19:19:47 - let dependencies3 = Dependencies.Locate(@"../IfSharp/") // /home/nbuser/IfSharp/
+2018-06-18 19:19:47 - dependencies3.GetInstalledPackages()
+2018-06-18 19:19:47 - Expression evaluation failed: Error during parsing of /home/nbuser/IfSharp/paket.lock.
+2018-06-18 19:19:47 - Message: unknown lock file format RESTRICTION: >= net451
+2018-06-18 19:19:47 - ExceptionError during parsing of /home/nbuser/IfSharp/paket.lock.
+2018-06-18 19:19:47 - Message: unknown lock file format RESTRICTION: >= net451
+2018-06-18 19:19:47 -   at <StartupCode$Paket-Core>.$LockFile+Parse@696-26.Invoke (System.String message) [0x00001] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 19:19:47 -   at Microsoft.FSharp.Core.PrintfImpl+StringPrintfEnv`1[TResult].Finalize () [0x00012] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 19:19:47 -   at Microsoft.FSharp.Core.PrintfImpl+Final3@247[TState,TResidue,TResult,A,B,C].Invoke (Microsoft.FSharp.Core.FSharpFunc`2[T,TResult] env, A a, B b, C c) [0x0007d] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 19:19:47 -   at Microsoft.FSharp.Core.OptimizedClosures+Invoke@3301-2[T2,T3,T4,TResult,T1].Invoke (T2 u, T3 v, T4 w) [0x00001] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 19:19:47 -   at Microsoft.FSharp.Core.OptimizedClosures+Invoke@3266-1[T2,T3,TResult,T1].Invoke (T2 u, T3 v) [0x00001] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 19:19:47 -   at Microsoft.FSharp.Core.OptimizedClosures+Invoke@3253[T2,TResult,T1].Invoke (T2 u) [0x00001] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 19:19:47 -   at <StartupCode$Paket-Core>.$LockFile+Parse@696-29.Invoke (System.String arg30) [0x00001] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 19:19:47 -   at Microsoft.FSharp.Core.FSharpFunc`2[T,TResult].InvokeFast[V] (Microsoft.FSharp.Core.FSharpFunc`2[T,TResult] func, T arg1, TResult arg2) [0x0001f] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 19:19:47 -   at Microsoft.FSharp.Core.FSharpFunc`2[T,TResult].InvokeFast[V,W] (Microsoft.FSharp.Core.FSharpFunc`2[T,TResult] func, T arg1, TResult arg2, V arg3) [0x0003d] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 19:19:47 -   at Paket.LockFile.Parse (System.String lockFileName, System.String[] lines) [0x00054] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 19:19:47 -   at Paket.Dependencies.GetLockFile () [0x00036] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 19:19:47 -   at Paket.Dependencies.GetInstalledPackages () [0x00001] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 19:19:47 -   at <StartupCode$FSI_0121>.$FSI_0121.main@ () [0x00015] in <ebd67ff5644843f1ae5c8538e69cd61a>:0 
+2018-06-18 19:19:47 -   at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+2018-06-18 19:19:47 -   at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in <77c9551943624fd18301ba6f78a841e5>:0 
+2018-06-18 19:20:44 - Paket.Package
+2018-06-18 19:20:44 -   [ "MathNet.Numerics"
+2018-06-18 19:20:44 -     "MathNet.Numerics.FSharp"
+2018-06-18 19:20:44 -     //"Microsoft.ML"
+2018-06-18 19:20:44 -   ]
+2018-06-18 19:20:47 - #load "Paket.Generated.Refs.fsx"
+2018-06-18 19:20:47 - //File.ReadAllText(@"../IfSharp/paket.dependencies")
+2018-06-18 19:20:47 - //File.GetLastWriteTime(@"../IfSharp/paket.dependencies")
+2018-06-18 19:20:47 - File.ReadAllText(@"../IfSharp/bin/paket.dependencies")
+2018-06-18 19:20:48 - File.GetLastWriteTime(@"../IfSharp/bin/paket.dependencies")
+2018-06-18 19:20:48 - File.ReadAllText(@"../IfSharp/bin/paket.lock")
+2018-06-18 19:20:48 - File.GetLastWriteTime(@"../IfSharp/bin/paket.lock")
+2018-06-18 19:20:48 - open System
+2018-06-18 19:20:48 - open System.IO
+2018-06-18 19:20:48 - open Paket
+2018-06-18 19:20:48 - let dependencies = Dependencies.Locate(__SOURCE_DIRECTORY__) // /home/nbuser/library
+2018-06-18 19:20:48 - Expression evaluation failed: Could not find 'paket.dependencies'. To use Paket with this solution, please run 'paket init' first.
+2018-06-18 19:20:48 - If you have already run 'paket.init' then ensure that 'paket.dependencies' is located in the top level directory of your repository.
+2018-06-18 19:20:48 - Like this:
+2018-06-18 19:20:48 - MySourceDir
+2018-06-18 19:20:48 -   .paket
+2018-06-18 19:20:48 -   paket.dependencies
+2018-06-18 19:20:48 - ExceptionCould not find 'paket.dependencies'. To use Paket with this solution, please run 'paket init' first.
+2018-06-18 19:20:48 - If you have already run 'paket.init' then ensure that 'paket.dependencies' is located in the top level directory of your repository.
+2018-06-18 19:20:48 - Like this:
+2018-06-18 19:20:48 - MySourceDir
+2018-06-18 19:20:48 -   .paket
+2018-06-18 19:20:48 -   paket.dependencies
+2018-06-18 19:20:48 -   at <StartupCode$Paket-Core>.$PublicAPI+findInPath@54-10.Invoke (System.String message) [0x00001] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 19:20:48 -   at Microsoft.FSharp.Core.PrintfImpl+StringPrintfEnv`1[TResult].Finalize () [0x00012] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 19:20:48 -   at Microsoft.FSharp.Core.PrintfImpl+Final5@270D[TState,TResidue,TResult,A,B,C,D,E].Invoke (E e) [0x00104] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 19:20:48 -   at <StartupCode$Paket-Core>.$PublicAPI+findInPath@54-17.Invoke (System.String arg70) [0x00001] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 19:20:48 -   at Microsoft.FSharp.Core.FSharpFunc`2[T,TResult].InvokeFast[V] (Microsoft.FSharp.Core.FSharpFunc`2[T,TResult] func, T arg1, TResult arg2) [0x0001f] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 19:20:48 -   at <StartupCode$Paket-Core>.$PublicAPI.findInPath@45-9 (System.IO.DirectoryInfo dir, System.Boolean withError) [0x00077] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 19:20:48 -   at Paket.Dependencies.Locate (System.String path) [0x00007] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 19:20:48 -   at <StartupCode$FSI_0134>.$FSI_0134.main@ () [0x00001] in <ebd67ff5644843f1ae5c8538e69cd61a>:0 
+2018-06-18 19:20:48 -   at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+2018-06-18 19:20:48 -   at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in <77c9551943624fd18301ba6f78a841e5>:0 
+2018-06-18 19:20:48 - dependencies.GetInstalledPackages()
+2018-06-18 19:20:49 - The value, namespace, type or module 'dependencies' is not defined. Maybe you want one of the following:
+2018-06-18 19:20:49 -    Dependencies
+2018-06-18 19:20:49 -    dependencies2
+2018-06-18 19:20:49 -    dependencies3
+2018-06-18 19:20:49 -    DependenciesFile
+2018-06-18 19:20:49 -    DependenciesGroup
+2018-06-18 19:20:49 - let dependencies2 = Dependencies.Locate(@"../IfSharp/bin/") // /home/nbuser/IfSharp/bin
+2018-06-18 19:20:49 - dependencies2.GetInstalledPackages()
+2018-06-18 19:20:49 - let dependencies3 = Dependencies.Locate(@"../IfSharp/") // /home/nbuser/IfSharp/
+2018-06-18 19:20:49 - dependencies3.GetInstalledPackages()
+2018-06-18 19:20:49 - Expression evaluation failed: Error during parsing of /home/nbuser/IfSharp/paket.lock.
+2018-06-18 19:20:49 - Message: unknown lock file format RESTRICTION: >= net451
+2018-06-18 19:20:49 - ExceptionError during parsing of /home/nbuser/IfSharp/paket.lock.
+2018-06-18 19:20:49 - Message: unknown lock file format RESTRICTION: >= net451
+2018-06-18 19:20:49 -   at <StartupCode$Paket-Core>.$LockFile+Parse@696-26.Invoke (System.String message) [0x00001] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 19:20:49 -   at Microsoft.FSharp.Core.PrintfImpl+StringPrintfEnv`1[TResult].Finalize () [0x00012] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 19:20:49 -   at Microsoft.FSharp.Core.PrintfImpl+Final3@247[TState,TResidue,TResult,A,B,C].Invoke (Microsoft.FSharp.Core.FSharpFunc`2[T,TResult] env, A a, B b, C c) [0x0007d] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 19:20:49 -   at Microsoft.FSharp.Core.OptimizedClosures+Invoke@3301-2[T2,T3,T4,TResult,T1].Invoke (T2 u, T3 v, T4 w) [0x00001] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 19:20:49 -   at Microsoft.FSharp.Core.OptimizedClosures+Invoke@3266-1[T2,T3,TResult,T1].Invoke (T2 u, T3 v) [0x00001] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 19:20:49 -   at Microsoft.FSharp.Core.OptimizedClosures+Invoke@3253[T2,TResult,T1].Invoke (T2 u) [0x00001] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 19:20:49 -   at <StartupCode$Paket-Core>.$LockFile+Parse@696-29.Invoke (System.String arg30) [0x00001] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 19:20:49 -   at Microsoft.FSharp.Core.FSharpFunc`2[T,TResult].InvokeFast[V] (Microsoft.FSharp.Core.FSharpFunc`2[T,TResult] func, T arg1, TResult arg2) [0x0001f] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 19:20:49 -   at Microsoft.FSharp.Core.FSharpFunc`2[T,TResult].InvokeFast[V,W] (Microsoft.FSharp.Core.FSharpFunc`2[T,TResult] func, T arg1, TResult arg2, V arg3) [0x0003d] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 19:20:49 -   at Paket.LockFile.Parse (System.String lockFileName, System.String[] lines) [0x00054] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 19:20:49 -   at Paket.Dependencies.GetLockFile () [0x00036] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 19:20:49 -   at Paket.Dependencies.GetInstalledPackages () [0x00001] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 19:20:49 -   at <StartupCode$FSI_0138>.$FSI_0138.main@ () [0x00015] in <ebd67ff5644843f1ae5c8538e69cd61a>:0 
+2018-06-18 19:20:49 -   at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+2018-06-18 19:20:49 -   at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in <77c9551943624fd18301ba6f78a841e5>:0 
+2018-06-18 19:21:19 - File.ReadAllText(@"../IfSharp/paket.dependencies")
+2018-06-18 19:21:33 - File.GetLastWriteTime(@"../IfSharp/paket.dependencies")
+2018-06-18 19:49:38 - let dependencies3 = Dependencies.Locate(@"../IfSharp/") // /home/nbuser/IfSharp/
+2018-06-18 19:49:38 - dependencies3.GetInstalledPackages()
+2018-06-18 19:49:38 - Expression evaluation failed: Error during parsing of /home/nbuser/IfSharp/paket.lock.
+2018-06-18 19:49:38 - Message: unknown lock file format RESTRICTION: >= net451
+2018-06-18 19:49:38 - ExceptionError during parsing of /home/nbuser/IfSharp/paket.lock.
+2018-06-18 19:49:38 - Message: unknown lock file format RESTRICTION: >= net451
+2018-06-18 19:49:38 -   at <StartupCode$Paket-Core>.$LockFile+Parse@696-26.Invoke (System.String message) [0x00001] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 19:49:38 -   at Microsoft.FSharp.Core.PrintfImpl+StringPrintfEnv`1[TResult].Finalize () [0x00012] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 19:49:38 -   at Microsoft.FSharp.Core.PrintfImpl+Final3@247[TState,TResidue,TResult,A,B,C].Invoke (Microsoft.FSharp.Core.FSharpFunc`2[T,TResult] env, A a, B b, C c) [0x0007d] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 19:49:38 -   at Microsoft.FSharp.Core.OptimizedClosures+Invoke@3301-2[T2,T3,T4,TResult,T1].Invoke (T2 u, T3 v, T4 w) [0x00001] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 19:49:38 -   at Microsoft.FSharp.Core.OptimizedClosures+Invoke@3266-1[T2,T3,TResult,T1].Invoke (T2 u, T3 v) [0x00001] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 19:49:38 -   at Microsoft.FSharp.Core.OptimizedClosures+Invoke@3253[T2,TResult,T1].Invoke (T2 u) [0x00001] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 19:49:38 -   at <StartupCode$Paket-Core>.$LockFile+Parse@696-29.Invoke (System.String arg30) [0x00001] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 19:49:38 -   at Microsoft.FSharp.Core.FSharpFunc`2[T,TResult].InvokeFast[V] (Microsoft.FSharp.Core.FSharpFunc`2[T,TResult] func, T arg1, TResult arg2) [0x0001f] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 19:49:38 -   at Microsoft.FSharp.Core.FSharpFunc`2[T,TResult].InvokeFast[V,W] (Microsoft.FSharp.Core.FSharpFunc`2[T,TResult] func, T arg1, TResult arg2, V arg3) [0x0003d] in <5939249c904cf4daa74503839c243959>:0 
+2018-06-18 19:49:38 -   at Paket.LockFile.Parse (System.String lockFileName, System.String[] lines) [0x00054] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 19:49:38 -   at Paket.Dependencies.GetLockFile () [0x00036] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 19:49:38 -   at Paket.Dependencies.GetInstalledPackages () [0x00001] in <593d0e63a970bee8a7450383630e3d59>:0 
+2018-06-18 19:49:38 -   at <StartupCode$FSI_0143>.$FSI_0143.main@ () [0x00015] in <ebd67ff5644843f1ae5c8538e69cd61a>:0 
+2018-06-18 19:49:38 -   at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+2018-06-18 19:49:38 -   at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00032] in <77c9551943624fd18301ba6f78a841e5>:0 
+2018-10-10 19:53:11 - Microsoft (R) F# Interactive version 10.1.0 for F# 4.1
+2018-10-10 19:53:11 - Copyright (c) Microsoft Corporation. All Rights Reserved.
+2018-10-10 19:53:11 - For help type #help;;
+2018-10-10 19:53:11 - > val it :
+2018-10-10 19:53:11 -   ResizeArray<System.Type *
+2018-10-10 19:53:11 -               (obj ->
+2018-10-10 19:53:11 -                  seq<string *
+2018-10-10 19:53:11 -                      string> *
+2018-10-10 19:53:11 -                  string)>
+2018-10-10 19:53:11 - = seq []
+2018-10-10 19:53:11 - --> Added '/home/nbuser/IfSharp/bin' to library include path
+2018-10-10 19:53:11 - --> Referenced '/home/nbuser/IfSharp/bin/IfSharp.Kernel.dll' (file may be locked by F# Interactive process)
+2018-10-10 19:53:11 - --> Referenced '/home/nbuser/IfSharp/bin/NetMQ.dll' (file may be locked by F# Interactive process)
+2018-10-10 19:53:12 - Reporting 0 opened comms
+2018-10-10 19:53:25 - open System
+2018-10-10 19:53:25 - open System.IO
+2018-10-10 19:53:26 - #load "Paket.fsx"
+2018-10-10 19:53:40 - Paket.Package
+2018-10-10 19:53:40 -   [ "MathNet.Numerics"
+2018-10-10 19:53:40 -     "MathNet.Numerics.FSharp"
+2018-10-10 19:53:40 -     //"Microsoft.ML"
+2018-10-10 19:53:40 -     //"Microsoft.ML.Probabilistic -Version 0.3.1810.501"
+2018-10-10 19:53:40 -     "Microsoft.ML.Probabilistic"
+2018-10-10 19:53:40 -   ]
+2018-10-10 19:54:15 - // Ignore this one - it's old!
+2018-10-10 19:54:15 - // File.ReadAllText(@"../IfSharp/paket.dependencies")
+2018-10-10 19:54:15 - // File.GetLastWriteTime(@"../IfSharp/paket.dependencies")
+2018-10-10 19:54:25 - File.ReadAllText(@"../IfSharp/bin/paket.dependencies")
+2018-10-10 19:54:36 - Paket.Package
+2018-10-10 19:54:36 -   [ "MathNet.Numerics"
+2018-10-10 19:54:36 -     "MathNet.Numerics.FSharp"
+2018-10-10 19:54:36 -     //"Microsoft.ML"
+2018-10-10 19:54:36 -     "Microsoft.ML.Probabilistic -Version 0.3.1810.501"
+2018-10-10 19:54:36 -     //"Microsoft.ML.Probabilistic"
+2018-10-10 19:54:36 -   ]
+2018-10-10 19:54:41 - #load "Paket.Generated.Refs.fsx"
+2018-10-10 19:54:42 - // Ignore this one - it's old!
+2018-10-10 19:54:42 - // File.ReadAllText(@"../IfSharp/paket.dependencies")
+2018-10-10 19:54:42 - // File.GetLastWriteTime(@"../IfSharp/paket.dependencies")
+2018-10-10 19:54:44 - File.ReadAllText(@"../IfSharp/bin/paket.dependencies")
+2018-10-10 19:54:50 - File.GetLastWriteTime(@"../IfSharp/bin/paket.dependencies")
+2018-10-10 19:54:55 - File.ReadAllText(@"../IfSharp/bin/paket.lock")
+2018-11-14 18:57:41 - Microsoft (R) F# Interactive version 10.1.0 for F# 4.1
+2018-11-14 18:57:41 - Copyright (c) Microsoft Corporation. All Rights Reserved.
+2018-11-14 18:57:41 - For help type #help;;
+2018-11-14 18:57:41 - > val it :
+2018-11-14 18:57:41 -   ResizeArray<System.Type *
+2018-11-14 18:57:41 -               (obj ->
+2018-11-14 18:57:41 -                  seq<string *
+2018-11-14 18:57:41 -                      string> *
+2018-11-14 18:57:41 -                  string)>
+2018-11-14 18:57:41 - = seq []
+2018-11-14 18:57:41 - --> Added '/home/nbuser/IfSharp/bin' to library include path
+2018-11-14 18:57:41 - --> Referenced '/home/nbuser/IfSharp/bin/IfSharp.Kernel.dll' (file may be locked by F# Interactive process)
+2018-11-14 18:57:41 - --> Referenced '/home/nbuser/IfSharp/bin/NetMQ.dll' (file may be locked by F# Interactive process)
+2018-11-14 18:57:42 - Reporting 0 opened comms
+2018-11-14 19:00:28 - open System
+2018-11-14 19:00:28 - open System.IO
+2018-11-14 19:00:29 - #load "Paket.fsx"
+2018-11-14 19:00:43 - Paket.Package
+2018-11-14 19:00:43 -   [ "MathNet.Numerics"
+2018-11-14 19:00:43 -     "MathNet.Numerics.FSharp"
+2018-11-14 19:00:43 -     //"Microsoft.ML"
+2018-11-14 19:00:43 -     "Microsoft.ML.Probabilistic -Version 0.3.1810.501"
+2018-11-14 19:00:43 -     //"Microsoft.ML.Probabilistic"
+2018-11-14 19:00:43 -   ]
+2018-11-14 19:01:07 - #load "Paket.Generated.Refs.fsx"
+2018-11-14 19:01:10 - File.ReadAllText(@"../IfSharp/bin/paket.dependencies")
+2018-11-14 19:01:11 - File.GetLastWriteTime(@"../IfSharp/bin/paket.dependencies")
+2018-11-14 19:01:12 - File.ReadAllText(@"../IfSharp/bin/paket.lock")
+2018-11-14 19:01:12 - File.GetLastWriteTime(@"../IfSharp/bin/paket.lock")
+2018-11-14 19:01:12 - open System
+2018-11-14 19:01:12 - open System.IO
+2018-11-14 19:01:12 - open Paket
+2018-11-14 19:01:13 - let dependencies = Dependencies.Locate(__SOURCE_DIRECTORY__) // /home/nbuser/library
+2018-11-14 19:01:13 - Expression evaluation failed: Could not find 'paket.dependencies'. To use Paket with this solution, please run 'paket init' first.
+2018-11-14 19:01:13 - If you have already run 'paket.init' then ensure that 'paket.dependencies' is located in the top level directory of your repository.
+2018-11-14 19:01:13 - Like this:
+2018-11-14 19:01:13 - MySourceDir
+2018-11-14 19:01:13 -   .paket
+2018-11-14 19:01:13 -   paket.dependencies
+2018-11-14 19:01:13 - ExceptionCould not find 'paket.dependencies'. To use Paket with this solution, please run 'paket init' first.
+2018-11-14 19:01:13 - If you have already run 'paket.init' then ensure that 'paket.dependencies' is located in the top level directory of your repository.
+2018-11-14 19:01:13 - Like this:
+2018-11-14 19:01:13 - MySourceDir
+2018-11-14 19:01:13 -   .paket
+2018-11-14 19:01:13 -   paket.dependencies
+2018-11-14 19:01:13 -   at Microsoft.FSharp.Core.PrintfModule+PrintFormatToStringThenFail@1645[TResult].Invoke (System.String message) [0x00000] in <5a7d678a904cf4daa74503838a677d5a>:0 
+2018-11-14 19:01:13 -   at <StartupCode$FSI_0018>.$FSI_0018.main@ () [0x00000] in <c50b572087444b278a483c00429c8110>:0 
+2018-11-14 19:01:13 -   at (wrapper managed-to-native) System.Reflection.MonoMethod.InternalInvoke(System.Reflection.MonoMethod,object,object[],System.Exception&)
+2018-11-14 19:01:13 -   at System.Reflection.MonoMethod.Invoke (System.Object obj, System.Reflection.BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x0003b] in <2943701620b54f86b436d3ffad010412>:0 
+2018-11-14 19:01:14 - dependencies.GetInstalledPackages()
+2018-11-14 19:01:15 - The value, namespace, type or module 'dependencies' is not defined. Maybe you want one of the following:
+2018-11-14 19:01:15 -    Dependencies
+2018-11-14 19:01:15 -    DependenciesFile
+2018-11-14 19:01:15 -    DependenciesGroup
+2018-11-14 19:01:15 -    DependenciesAndLock
+2018-11-14 19:01:15 -    JustDependencies
+2018-11-14 19:01:15 - let dependencies2 = Dependencies.Locate(@"../IfSharp/bin/") // /home/nbuser/IfSharp/bin
+2018-11-14 19:01:15 - dependencies2.GetInstalledPackages()
+2018-11-14 19:01:16 - let dependencies3 = Dependencies.Locate(@"../IfSharp/") // /home/nbuser/IfSharp/
+2018-11-14 19:01:16 - dependencies3.GetInstalledPackages()
+2018-11-14 19:01:17 - File.ReadAllText(@"../IfSharp/bin/Paket.Generated.Refs.fsx")
+2018-11-14 19:01:17 - File.ReadAllText(@"../IfSharp/bin/.paket/load/main.group.fsx")
+2018-11-14 19:01:18 - File.GetLastWriteTime(@"../IfSharp/bin/.paket/load/main.group.fsx")
+2018-11-14 19:01:18 - open MathNet.Numerics.LinearAlgebra
+2018-11-14 19:01:19 - let m = matrix [[ 1.0; 2.0 ]
+2018-11-14 19:01:19 -                 [ 3.0; 4.0 ]]
+2018-11-14 19:01:58 - File.ReadAllText(@"../IfSharp/bin/Paket.Generated.Refs.fsx")
+2018-11-14 19:02:00 - File.ReadAllText(@"../IfSharp/bin/.paket/load/main.group.fsx")
+2018-11-14 19:02:07 - File.GetLastWriteTime(@"../IfSharp/bin/.paket/load/main.group.fsx")
+2018-11-14 19:02:11 - open MathNet.Numerics.LinearAlgebra
+2018-11-14 19:02:13 - let m = matrix [[ 1.0; 2.0 ]
+2018-11-14 19:02:13 -                 [ 3.0; 4.0 ]]
+2018-11-14 19:02:19 - m.Inverse() 
+2018-11-14 19:38:52 - Reporting 0 opened comms
+2018-11-14 19:48:16 - Reporting 0 opened comms
+2018-11-21 19:03:34 - Microsoft (R) F# Interactive version 10.1.0 for F# 4.1
+2018-11-21 19:03:34 - Copyright (c) Microsoft Corporation. All Rights Reserved.
+2018-11-21 19:03:34 - For help type #help;;
+2018-11-21 19:03:34 - > val it :
+2018-11-21 19:03:34 -   ResizeArray<System.Type *
+2018-11-21 19:03:34 -               (obj ->
+2018-11-21 19:03:34 -                  seq<string *
+2018-11-21 19:03:34 -                      string> *
+2018-11-21 19:03:34 -                  string)>
+2018-11-21 19:03:34 - = seq []
+2018-11-21 19:03:34 - --> Added '/home/nbuser/IfSharp/bin' to library include path
+2018-11-21 19:03:34 - --> Referenced '/home/nbuser/IfSharp/bin/IfSharp.Kernel.dll' (file may be locked by F# Interactive process)
+2018-11-21 19:03:34 - --> Referenced '/home/nbuser/IfSharp/bin/NetMQ.dll' (file may be locked by F# Interactive process)
+2018-11-21 19:03:36 - Reporting 0 opened comms
